@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poiret+One&family=Roboto:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
     <title>Кондитерська</title>        
 </head>
 <body>
 
-<!-- Шапка -->
 <header>
-    <!-- Навигация -->
     <nav>
         <a href="./index.html">Головна</a>
         <a href="./menu.html">Меню</a>
@@ -25,10 +30,112 @@
 </header>
 
 <main>
+    <h1>Особистий кабінет</h1>
+    <p>Вітаємо, Karolina Rm</p>
+    <button>ВИЙТИ</button>
+    <div>
+        <h2>Персональні дані</h2>
+        <form action=''>
+            <label for="lname">Прізвище</label><br>
+            <input type="text" id="lname" name="lname" value=""><br>
+            <label for="fname">Ім’я</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="phnumber">Контактний телефон</label><br>
+            <input type="text" id="phnumber" name="phnumber" value=""><br>
+            <label for="email">Електронна пошта</label><br>
+            <input type="text" id="email" name="email" value=""><br>
+            <label for="birthday">Дата народження</label><br>
+            <input type="text" id="birthday" name="birthday" value=""><br>
+            <label for="gender">Стать</label><br>
+            <input type="text" id="gender" name="gender" value=""><br>
+            <input type="submit" value="ЗБЕРЕГТИ ДАНІ">
+        </form>
+    </div>
 
+    <div>
+        <h2>Адреси  доставки</h2>
+        <form action=''>
+            <label for="city">Місто</label><br>
+            <input type="text" id="city" name="city" value=""><br>
+            <label for="street">Вулиця</label><br>
+            <input type="text" id="street" name="street" value=""><br>
+            <label for="house">Будинок</label><br>
+            <input type="text" id="house" name="house" value=""><br>
+            <label for="apart">Квартира</label><br>
+            <input type="text" id="apart" name="apart" value=""><br>
+            <label for="floor">Поверх</label><br>
+            <input type="text" id="floor" name="floor" value=""><br>
+            <input type="submit" value="ЗБЕРЕГТИ АДРЕСУ">
+        </form>
+
+        <h2>Збережені адреси</h2>
+        <ul>
+            <li>
+                <p>Київ, вулиця Володимирська, будинок 45, квартира 12, поверх 5.</p>
+            </li>
+            <li>
+                <p>Львів, вулиця Шевченка, будинок 18, квартира 25, поверх 7.</p>
+            </li>
+            <li>
+                <p>Одеса, вулиця Дерибасівська, будинок 16, квартира 24, поверх 3.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Історія замовлень</h2>
+        <ul>
+            <li>
+                <h3>24.05.24</h3>
+                <button><img src="./image/Chevron down.png" alt=""></button>
+            </li>
+            <li>
+                <h3>02.04.24</h3>
+                <button><img src="./image/Chevron down.png" alt=""></button>
+            </li>
+            <li>
+                <h3>31.01.24</h3>
+                <button><img src="./image/Chevron up.png" alt=""></button>
+                <div>                
+                    <p>Київ, вулиця Володимирська, будинок 45, квартира 12, поверх 5.</p>
+                    <div class="card">
+                        <img src="./image/image 1.png" alt="Продукт 2">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>1 кг</p>
+                        <button class="product-button"><img src="./image/shopping_cart.png"></button>
+                    </div>
+                    <div class="card">
+                        <img src="./image/image 2.png" alt="Продукт 2">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>1 кг</p>
+                        <button class="product-button"><img src="./image/shopping_cart.png"></button>
+                    </div>
+                    <div class="card">
+                        <img src="./image/image 3.png" alt="Продукт 2">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>1 кг</p>
+                        <button class="product-button"><img src="./image/shopping_cart.png"></button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <div>
+        <h2>Змінити пароль</h2>
+        <form action=''>
+            <label for="oldpass">Старий пароль</label><br>
+            <input type="password" id="oldpass" name="oldpass" value=""><br>
+            <label for="newpass">Новий пароль</label><br>
+            <input type="password" id="newpass" name="newpass" value=""><br>
+            <label for="confirmpass">Підтвердити пароль</label><br>
+            <input type="password" id="confirmpass" name="confirmpass" value=""><br>
+            <input type="submit" value="ЗМІНИТИ ПАРОЛЬ">
+        </form>
+    </div>
 </main>
 
-<!-- Подвал -->
 <footer class="footer">
     <div class="footer-content">
         <div>
