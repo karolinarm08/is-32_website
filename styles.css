@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    position:absolute;
+    position: fixed;
     background-color: var(--color-background);
     width: 100%;
     height: 70px;
@@ -35,6 +35,7 @@ main {
 a {
     text-decoration: none;
     color: var(--color-purple);
+    transition: font-weight 0.4s ease-in-out;
 }
 
 button {
@@ -43,9 +44,11 @@ button {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    font-family: "Montserrat", sans-serif;
 }   
 
 nav {
+    position:static;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -55,32 +58,39 @@ nav {
     font-size: 20px;
     color: var(--color-white);
     min-width: min-content;
-    transition: 3ms ;
 }
 
-section {
-    margin-bottom: 70px;
-    margin-left: 35px;
-    margin-right: 35px;
-}
+
 
 h1 {
     font-size: 40px;
     font-weight: 400;    
 }
 
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+
 h1,h2,h3,p {
     margin: 0px;
 }
 
-a:focus {
+section, .main {
+    margin-bottom: 70px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 35px;
+}
+
+nav a:focus {
     color: var(--color-purple);
     font-weight: 600;
 }
 
-.active {
+nav .active, nav a:hover {
     font-weight: 600;
-    color: var(--color-purple);
 }
 
 .nav-main, .nav-first, .nav-second {
@@ -121,16 +131,8 @@ a:focus {
 .section-cont {
     font-size: 20px;
     font-weight: 400;  
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.section-title {
-    font-size: 40px;
-    font-weight: 400;
-}
 
 .text-to-arrow {
     font-family: "Montserrat", sans-serif;
@@ -159,12 +161,20 @@ a:focus {
     box-shadow: 0px 0px 21px 6px rgba(116,116,116,0.1);
     margin-left: 10px;
     margin-right: 10px;
+    color: var(--color-black);
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.card-container:hover {
+    box-shadow: 0px 0px 21px 6px rgba(73, 129, 147, 0.3);
+    color: var(--color-black);
 }
 
 .card-img {
     border-radius: 20px 20px 0 0;
-    width: 346px;
+    width: 100%;
     height: 364px;
+    object-fit: cover;
 }
 
 .card {
@@ -430,6 +440,109 @@ a:focus {
 .copyright {
     text-align: end;
 }
+
+.title {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-filters {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 6px;
+}
+
+.filter {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 35px;
+    padding: 0px;
+}
+
+.filter-button {
+    color: var(--color-purple);
+    background-color: var(--color-background);
+    border-radius: 20px;
+    border: 2px solid var(--color-purple);
+    margin: 3px;
+    padding: 7px 14px 7px 14px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.drink {
+    color: var(--color-blue);
+    border-color: var(--color-blue);
+
+}
+
+.search {
+    
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    width: 196px;
+    padding: 7px 28px 7px 14px;
+    margin: 3px;
+    background-color: var(--color-background);
+    border-radius: 20px;
+    border: 2px solid var(--color-grey-light);
+}
+
+.search-input, .search-input:focus {
+    outline: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-grey-dark);
+    border: none;
+}
+
+.search-button {
+
+}
+
+.menu-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-left: -28px;
+    margin-right: -28px;
+    padding: 10px;
+}
+
+.menu-cards-container .card-container {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+}
+
+.cont-button {
+    
+}
+
+
+
+
 
 
 
