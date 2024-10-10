@@ -84,6 +84,11 @@ section, .main {
     margin-top: 35px;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+}
+
 nav a:focus {
     color: var(--color-purple);
     font-weight: 600;
@@ -149,9 +154,10 @@ nav .active, nav a:hover {
     align-items: start;
     justify-content: flex-start;
     overflow: hidden;
-    margin-left: -28px;
-    margin-right: -28px;
-    padding: 28px;
+    flex-wrap: nowrap;
+    margin: 0px -28px;
+    padding: 28px 28px;
+    gap: 21px;
 }
 
 .card-container {
@@ -159,8 +165,6 @@ nav .active, nav a:hover {
     height: 525px;
     border-radius: 20px;
     box-shadow: 0px 0px 21px 6px rgba(116,116,116,0.1);
-    margin-left: 10px;
-    margin-right: 10px;
     color: var(--color-black);
     transition: box-shadow 0.4s ease-in-out;
 }
@@ -172,7 +176,7 @@ nav .active, nav a:hover {
 
 .card-img {
     border-radius: 20px 20px 0 0;
-    width: 100%;
+    width: 346px;
     height: 364px;
     object-fit: cover;
 }
@@ -284,9 +288,9 @@ nav .active, nav a:hover {
     align-items: start;
     justify-content: center;
     overflow: hidden;
-    margin-left: -28px;
-    margin-right: -28px;
-    padding: 0 28px 28px 28px;
+    margin: 0px -28px;
+    gap: 14px;
+    padding: 28px;
 }
 
 .review-card {
@@ -294,10 +298,7 @@ nav .active, nav a:hover {
     border-radius: 20px;
     border-color: var(--color-purple);
     padding: 14px 21px 14px 21px;
-    width: 427px;
-    margin-left: 14px;
-    margin-right: 14px;
-    margin-top: 28px;
+    flex-basis: calc((100% - (14px * 3 )) / 4);
 }
 
 .review-inf {
@@ -521,14 +522,13 @@ nav .active, nav a:hover {
     justify-content: center;
     flex-wrap: wrap;
     overflow: hidden;
-    margin-left: -28px;
-    margin-right: -28px;
-    padding: 10px;
+    margin: 0px -28px;
+    padding: 28px 28px;
+    gap: 21px;
 }
 
 .menu-cards-container .card-container {
-    margin-top: 14px;
-    margin-bottom: 14px;
+
 }
 
 .cont {
