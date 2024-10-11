@@ -157,7 +157,7 @@ nav .active, nav a:hover {
     flex-wrap: nowrap;
     margin: 0px -28px;
     padding: 28px 28px;
-    gap: 20px;
+    gap: 21px;
 }
 
 .card-container {
@@ -524,7 +524,7 @@ nav .active, nav a:hover {
     overflow: hidden;
     margin: 0px -28px;
     padding: 28px 28px;
-    gap: 21px;
+    gap: 20px;
 }
 
 .menu-cards-container .card-container {
