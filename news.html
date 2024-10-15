@@ -31,51 +31,61 @@
 </header>
 
 <main>
-    <h1>Новини</h1>
-    <div class="filters">
-        <select>
-            <option value="">Сортувати за...</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
-        <form>
-            <input type="text" placeholder="ПОШУК">
-            <button type="submit"><img src="./image/Search.png"></button>
-        </form>
+    <div class="banner">
+        <img src="./image/waves_4.png" width="100%" alt="волны">
     </div>
-    <div>
-        <div>
-            <div>
+    <div class="main">
+        <h2 class="title">Новини</h2>
+        <div class="filters">
+            <select class="sort-form">
+                <option class="option" value="">Сортувати за...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <form class="search-form">
+                <input class="search-input" type="text" placeholder="Пошук...">
+                <button class="search-button" type="submit"><img src="./image/search.svg" alt=""></button>
+            </form>
+        </div>
+    <div class="news-cards">
+        <a href="#" class="news-card">
+            <div class="news-text">
                 <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viv...</h2>
+                <span>15.06.24</span>
                 <p>Vivamus mi sem, imperdiet vitae metus dapibus, rhoncus sollicitudin tortor. Maecenas vestibulum laoreet sodales. Quisque ut porta eros. Vestibulum efficitur metus rhoncus laoreet aliquam. Ut consectetur et elit vitae efficitur. ...</p>
             </div>
             <img src="./image/image 30.png" alt="">
-        </div>
-        <div>
-            <div>
+        </a>
+        <a href="#" class="news-card">
+            <div class="news-text">
                 <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viv...</h2>
+                <span>7.06.24</span>
                 <p>Vivamus mi sem, imperdiet vitae metus dapibus, rhoncus sollicitudin tortor. Maecenas vestibulum laoreet sodales. Quisque ut porta eros. Vestibulum efficitur metus rhoncus laoreet aliquam. Ut consectetur et elit vitae efficitur. ...</p>
             </div>
             <img src="./image/image 31.png" alt="">
-        </div>
-        <div>
-            <div>
+        </a>
+        <a href="#" class="news-card">
+            <div class="news-text">
                 <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viv...</h2>
+                <span>29.05.24</span>
                 <p>Vivamus mi sem, imperdiet vitae metus dapibus, rhoncus sollicitudin tortor. Maecenas vestibulum laoreet sodales. Quisque ut porta eros. Vestibulum efficitur metus rhoncus laoreet aliquam. Ut consectetur et elit vitae efficitur. ...</p>
             </div>
             <img src="./image/image 32.png" alt="">
-        </div>
-        <div>
-            <div>
+        </a>
+        <a href="#" class="news-card">
+            <div class="news-text">
                 <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viv...</h2>
+                <span>23.05.24</span>
                 <p>Vivamus mi sem, imperdiet vitae metus dapibus, rhoncus sollicitudin tortor. Maecenas vestibulum laoreet sodales. Quisque ut porta eros. Vestibulum efficitur metus rhoncus laoreet aliquam. Ut consectetur et elit vitae efficitur. ...</p>
             </div>
             <img src="./image/image 33.png" alt="">
-        </div>
-        <button><img src="./image/Line 1.png" alt=""></button>
+        </a>   
+    </div>        
+    <div class="cont">
+        <button class="cont-button"><img src="./image/Line 1.png"></button>    
     </div>
 </main>
 

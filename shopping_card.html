@@ -31,137 +31,150 @@
 </header>
 
 <main>
-    <h1>Кошик</h1>
-    <div class="filters">
-        <p>Сума до сплати: 1111 грн</p>
-        <button>Обрати усі</button>
-        <button>Замовити обрані</button>
+    <div class="banner">
+        <img src="./image/waves_4.png" width="100%" alt="волны">
     </div>
-    <div class="cards-container">
-        <div class="card">
-            <img src="./image/image 2.png" alt="Продукт 1">
-            <button><img src="./image/icon_selection.png" alt=""></button>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>1 кг</p>
-            <p class="product-price">111 грн</p>
-            <div class="input-group quantity_goods">
-                <input type="button" value="-" id="button_minus">
-                <input type="number" step="1" min="1" max="10" id="num_count" name="quantity" value="1" title="Qty">
-                <input type="button" value="+" id="button_plus">
-            </div> 
+    <div class="main">
+        <h2 class="title">Кошик</h2>
+        <div class="filters">
+            <p class="shop-cart-summ">Сума до сплати: 1111 грн</p>
+            <div class="shop-cart-but">
+                <button class="select-all">Обрати усі</button>
+                <button class="filter-button">Замовити обрані</button>
+            </div>
         </div>
-        <div class="card">
-            <img src="./image/image 4.png" alt="Продукт 1">
-            <button><img src="./image/icon_selection.png" alt=""></button>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>1 кг</p>
-            <p class="product-price">111 грн</p>
-            <div class="input-group quantity_goods">
-                <input type="button" value="-" id="button_minus">
-                <input type="number" step="1" min="1" max="10" id="num_count" name="quantity" value="1" title="Qty">
-                <input type="button" value="+" id="button_plus">
-            </div> 
+        <div class="menu-cards-container">
+            <a href="./product.html" class="card-container">
+                <div class="shop-cart-img">
+                    <img class="card-img" src="./image/image 1.png" alt="Продукт 1">
+                    <button class="card-select not-selected"><img src="./image/selection.svg" alt=""></button>
+                </div>
+                <div class="card">
+                    <p class="card-name">Lorem ipsum</p>
+                    <p class="card-descr">Vivamus mi sem</p>
+                    <div class="card-details">
+                        <div >
+                            <p class="weight">1 кг</p>
+                            <p class="card-price">111 грн</p>
+                        </div>
+                        <div class="card-quantity">
+                            <button type="button" id="button_minus">-</button>
+                            <span>1</span>
+                            <button type="button" id="button_plus">+</button>
+                        </div>  
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card-container">
+                <div class="shop-cart-img">
+                    <img class="card-img" src="./image/image 6.png" alt="Продукт 1">
+                    <button class="card-select selected"><img src="./image/selection.svg" alt=""></button>
+                </div>
+                <div class="card">
+                    <p class="card-name">Lorem ipsum</p>
+                    <p class="card-descr">Vivamus mi sem, imperdiet vitae metus dapibus, rhoncus sollicitudin tortor.</p>
+                    <div class="card-details">
+                        <div >
+                            <p class="weight">1 кг</p>
+                            <p class="card-price">111 грн</p>
+                        </div>
+                        <div class="card-quantity">
+                            <button type="button" id="button_minus">-</button>
+                            <span>1</span>
+                            <button type="button" id="button_plus">+</button>
+                        </div>  
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card-container">
+                <div class="shop-cart-img">
+                    <img class="card-img" src="./image/image 5.png" alt="Продукт 1">
+                    <button class="card-select selected"><img src="./image/selection.svg" alt=""></button>
+                </div>
+                <div class="card">
+                    <p class="card-name">Lorem ipsum</p>
+                    <p class="card-descr">Vivamus mi sem, imperdiet vitae metus dapibus, rhoncus sollicitudin tortor.</p>
+                    <div class="card-details">
+                        <div >
+                            <p class="weight">1 кг</p>
+                            <p class="card-price">111 грн</p>
+                        </div>
+                        <div class="card-quantity">
+                            <button type="button" id="button_minus">-</button>
+                            <span>1</span>
+                            <button type="button" id="button_plus">+</button>
+                        </div>  
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card-container">
+                <div class="shop-cart-img">
+                    <img class="card-img" src="./image/image 13.png" alt="Продукт 1">
+                    <button class="card-select selected"><img src="./image/selection.svg" alt=""></button>
+                </div>
+                <div class="card">
+                    <p class="card-name">Lorem ipsum</p>
+                    <p class="card-descr">Vivamus mi sem, imperdiet vitae metus dapibus, rhoncus sollicitudin tortor.</p>
+                    <div class="card-details">
+                        <div >
+                            <p class="weight">1 кг</p>
+                            <p class="card-price">111 грн</p>
+                        </div>
+                        <div class="card-quantity">
+                            <button type="button" id="button_minus">-</button>
+                            <span>1</span>
+                            <button type="button" id="button_plus">+</button>
+                        </div>  
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card-container">
+                <div class="shop-cart-img">
+                    <img class="card-img" src="./image/image 7.png" alt="Продукт 1">
+                    <button class="card-select selected"><img src="./image/selection.svg" alt=""></button>
+                </div>
+                <div class="card">
+                    <p class="card-name">Lorem ipsum</p>
+                    <p class="card-descr">Vivamus mi sem, imperdiet vitae metus dapibus, rhoncus sollicitudin tortor.</p>
+                    <div class="card-details">
+                        <div >
+                            <p class="weight">1 кг</p>
+                            <p class="card-price">111 грн</p>
+                        </div>
+                        <div class="card-quantity">
+                            <button type="button" id="button_minus">-</button>
+                            <span>1</span>
+                            <button type="button" id="button_plus">+</button>
+                        </div>  
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card-container">
+                <div class="shop-cart-img">
+                    <img class="card-img" src="./image/image 10.png" alt="Продукт 1">
+                    <button class="card-select not-selected"><img src="./image/selection.svg" alt=""></button>
+                </div>
+                <div class="card">
+                    <p class="card-name">Lorem ipsum</p>
+                    <p class="card-descr">Vivamus mi sem, imperdiet vitae metus dapibus, rhoncus sollicitudin tortor.</p>
+                    <div class="card-details">
+                        <div >
+                            <p class="weight">1 кг</p>
+                            <p class="card-price">111 грн</p>
+                        </div>
+                        <div class="card-quantity">
+                            <button type="button" id="button_minus">-</button>
+                            <span>1</span>
+                            <button type="button" id="button_plus">+</button>
+                        </div>  
+                    </div>
+                </div>
+            </a>
         </div>
-        <div class="card">
-            <img src="./image/image 9.png" alt="Продукт 2">
-            <button><img src="./image/icon_selection.png" alt=""></button>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>1 кг</p>
-            <p class="product-price">111 грн</p>
-            <div class="input-group quantity_goods">
-                <input type="button" value="-" id="button_minus">
-                <input type="number" step="1" min="1" max="10" id="num_count" name="quantity" value="1" title="Qty">
-                <input type="button" value="+" id="button_plus">
-            </div> 
-        </div>
-        <div class="card">
-            <a href="./product.html">
-                <img src="./image/image 1.png" alt="Продукт 3">
-                <button><img src="./image/icon_selection.png" alt=""></button>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>1 кг</p>
-                <p class="product-price">111 грн</p>
-            </a>                
-            <div class="input-group quantity_goods">
-                <input type="button" value="-" id="button_minus">
-                <input type="number" step="1" min="1" max="10" id="num_count" name="quantity" value="1" title="Qty">
-                <input type="button" value="+" id="button_plus">
-            </div> 
-        </div>
-        <div class="card">
-            <img src="./image/image 13.png" alt="Продукт 4">
-            <button><img src="./image/icon_selection.png" alt=""></button>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>1 кг</p>
-            <p class="product-price">111 грн</p>
-            <div class="input-group quantity_goods">
-                <input type="button" value="-" id="button_minus">
-                <input type="number" step="1" min="1" max="10" id="num_count" name="quantity" value="1" title="Qty">
-                <input type="button" value="+" id="button_plus">
-            </div> 
-        </div>
-        <div class="card">
-            <img src="./image/image 10.png" alt="Продукт 2">
-            <button><img src="./image/icon_selection.png" alt=""></button>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>1 кг</p>
-            <p class="product-price">111 грн</p>
-            <div class="input-group quantity_goods">
-                <input type="button" value="-" id="button_minus">
-                <input type="number" step="1" min="1" max="10" id="num_count" name="quantity" value="1" title="Qty">
-                <input type="button" value="+" id="button_plus">
-            </div> 
-        </div>
-        <div class="card">
-            <img src="./image/image 3.png" alt="Продукт 3">
-            <button><img src="./image/icon_selection.png" alt=""></button>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>1 кг</p>
-            <p class="product-price">111 грн</p>
-            <div class="input-group quantity_goods">
-                <input type="button" value="-" id="button_minus">
-                <input type="number" step="1" min="1" max="10" id="num_count" name="quantity" value="1" title="Qty">
-                <input type="button" value="+" id="button_plus">
-            </div> 
-        </div>
-        <div class="card">
-            <img src="./image/image 17.png" alt="Продукт 1">
-            <button><img src="./image/icon_selection.png" alt=""></button>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>1 кг</p>
-            <p class="product-price">111 грн</p>
-            <div class="input-group quantity_goods">
-                <input type="button" value="-" id="button_minus">
-                <input type="number" step="1" min="1" max="10" id="num_count" name="quantity" value="1" title="Qty">
-                <input type="button" value="+" id="button_plus">
-            </div>         
-        </div>
-        <div class="card">
-            <img src="./image/image 18.png" alt="Продукт 2">
-            <button><img src="./image/icon_selection.png" alt=""></button>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>1 кг</p>
-            <p class="product-price">111 грн</p>
-            <div class="input-group quantity_goods">
-                <input type="button" value="-" id="button_minus">
-                <input type="number" step="1" min="1" max="10" id="num_count" name="quantity" value="1" title="Qty">
-                <input type="button" value="+" id="button_plus">
-            </div>         
-        </div>
-        <div class="card">
-            <img src="./image/image 7.png" alt="Продукт 3">
-            <button><img src="./image/icon_selection.png" alt=""></button>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>1 кг</p>
-            <p class="product-price">111 грн</p>
-            <div class="input-group quantity_goods">
-                <input type="button" value="-" id="button_minus">
-                <input type="number" step="1" min="1" max="10" id="num_count" name="quantity" value="1" title="Qty">
-                <input type="button" value="+" id="button_plus">
-            </div>         
+        <div class="cont">
+            <button class="cont-button"><img src="./image/Line 1.png"></button>
         </div>
     </div>
-    <button class="cont-button"><img src="./image/Line 1.png"></button>
 </main>
 
 <footer class="footer">
