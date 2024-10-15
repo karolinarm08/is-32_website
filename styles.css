@@ -397,7 +397,6 @@ nav .active, nav a:hover {
 .newsletter {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 .newsletter-form {
@@ -532,18 +531,21 @@ nav .active, nav a:hover {
     align-items: center;
     justify-content:flex-start;
     min-width: 196px;
-    padding: 7px 14px 7px 14px;
+    padding: 5px 14px;
     border-radius: 20px;
     border: 2px solid var(--color-grey-dark);
+    position: relative;
 }
 
 .search-input, .search-input::placeholder {
     outline: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--color-grey-dark);
     border: none;
+    width: 100%;
+    margin-right: 21px;
 }
 
 .search-input:focus {
@@ -551,9 +553,10 @@ nav .active, nav a:hover {
 }
 
 .search-button {
+    position: absolute;
     padding: 0;
     margin-left: 7px;
-    height: 100%;
+    right: 14px;
 }
 
 .menu-cards-container {
@@ -809,6 +812,29 @@ nav .active, nav a:hover {
     .shop-cards {
         flex-wrap: wrap;        
     }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .search-form {
+        margin-top: 5px;
+    }
+
+    .newsletter {
+        width: 100%;
+    }
+
+    .footer-sections-end {
+        margin-top: 21px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 21px;
+    }
+
+    .copyright {
+        align-self: center;
+    }    
 }
 
 @media (max-width: 1023px) {
@@ -892,7 +918,11 @@ nav .active, nav a:hover {
     .cards-container {
         flex-wrap: wrap;
     }
-    
+
+    .card-container {
+        max-width: 325px;
+    }
+
     #about-us {
         padding-top: 35px;
         margin-top: 0;
@@ -947,30 +977,11 @@ nav .active, nav a:hover {
     .newsletter-button img {
         width: 12px;
     }
-
-    .footer-sections-end {
-        margin-top: 21px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 21px;
-    }
     
     .footer-navigation {
         gap: 14px;
         flex-wrap: wrap;
     }
-
-    .copyright {
-        align-self: center;
-    }
-    
-    .filters {
-        flex-direction: column;
-    }
-    
-    .search-form {
-        margin-top: 5px;
-    }    
     
     .sort-form {
         width: 196px;
