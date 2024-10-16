@@ -31,6 +31,7 @@
 </header>
 
 <main>
+    
     <div class="banner">
         <img src="./image/main_banner2.png" width="100%" alt="банер">
         <img src="./image/waves_1.png" width="100%" style="margin-top: -100px;" alt="волны">
@@ -283,8 +284,30 @@
             <p>Made by Karolina RM © 2024</p>
         </div>
     </div>
+    <div id="scrollToTopBtn"></div>
     
 </footer>
+<script>
+     // Получить кнопку
+     const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    // Показать кнопку, когда пользователь прокрутил вниз на 100 пикселей
+    window.onscroll = function() {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    // При нажатии на кнопку прокрутить вверх
+    scrollToTopBtn.onclick = function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Плавная прокрутка
+        });
+    };
+</script>
 
 </body>
 </html>
