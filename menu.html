@@ -13,8 +13,11 @@
 </head>
 <body>
 <header>
-    <nav>
+    <nav id="nav" class="topnav">
         <div class="nav-logo"><a href="./index.html">Méz</a></div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
         <div class="nav-main">
             <div class="nav-first">
                 <a href="./menu.html" class="active">Меню</a>
@@ -27,7 +30,7 @@
                 <a href="./account.html"><img src="./image/account.png" height="39px"></a>
                 <a href="./shopping_card.html"><img src="./image/shopping_cart.png" height="39px"></a>
             </div>
-        </div>      
+        </div>   
     </nav>
 </header>
 
@@ -39,7 +42,7 @@
         <h2 class="title">Меню</h2>
         <div class="filters">
             <div class="main-filters">            
-                <button><img class="filter" src="./image/filter.png"></button>
+                <button class="filter"><img height="100%" src="./image/filter.png"></button>
 
                 <button class="filter-button">НОВИНКИ</button>        
                 <button class="filter-button">СЕЗОННІ ПРОПОЗИЦІЇ</button>
