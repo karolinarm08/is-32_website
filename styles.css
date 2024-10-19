@@ -22,7 +22,7 @@ header {
     position: fixed;
     background-color: var(--color-background);
     width: 100%;
-    height: fit-content;
+    height: 70px;
     margin-top: 0%;
     align-content: center;
     color: var(--color-purple);
@@ -99,13 +99,18 @@ nav .active, nav a:hover {
     font-weight: 600;
 }
 
+nav .icon {
+    display: none;
+}
+
 .nav-logo {
     font-family: "Schoolbell", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: xxx-large; 
     color: var(--color-purple);
-    margin-right: 35px;
+    height: 70px;
+    align-self: start;
 }
 
 .nav-main, .nav-first, .nav-second {
@@ -805,7 +810,16 @@ nav .active, nav a:hover {
     font-weight: 500;
 }
 
-
+i.fa.fa-bars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 35px;
+    height: 70px;
+    margin: 0;
+}
 
 @media (max-width: 767px) {
     .review-card {
@@ -838,6 +852,55 @@ nav .active, nav a:hover {
         flex-direction: column;
         align-items: flex-start;
         gap: 21px;
+    }
+}
+
+@media (max-width: 786px) {
+    .topnav .nav-main {display: none;}
+    .topnav a.icon {
+        display: block;
+        font-size: xx-large;
+        margin: 0 0px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 786px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive .nav-main,
+    .topnav.responsive .nav-first,
+    .topnav.responsive .nav-second{
+        display: flex;
+        text-align: right;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: var(--color-background);
+    }
+
+    .topnav.responsive .nav-main{
+        gap: 21px;
+        padding: 20px;
+        padding-top: 63px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 21px 6px rgba(116,116,116,0.1);
+        margin-top: 7px;
+        margin-right: -14px;
+        width: 130px;
+    }
+
+    .topnav.responsive .nav-first{
+        gap: 7px; 
+    }
+
+    .topnav.responsive .nav-second{
+        flex-direction: row;
+        gap: 14px;
     }
 }
 

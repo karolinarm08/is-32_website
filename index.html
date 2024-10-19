@@ -7,14 +7,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
     <title>Головна</title>        
 </head>
 <body>
 <header>
-    <nav>
+    <nav id="nav" class="topnav">
         <div class="nav-logo"><a href="./index.html">Méz</a></div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
         <div class="nav-main">
             <div class="nav-first">
                 <a href="./menu.html">Меню</a>
@@ -27,7 +31,8 @@
                 <a href="./account.html"><img src="./image/account.png" height="39px"></a>
                 <a href="./shopping_card.html"><img src="./image/shopping_cart.png" height="39px"></a>
             </div>
-        </div>      
+        </div>
+              
     </nav>
 </header>
 
@@ -308,6 +313,15 @@
             behavior: 'smooth' // Плавная прокрутка
         });
     };
+
+    function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
 </script>
 
 </body>
