@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
-    <title>Головна</title>        
+    <title>Головна</title> 
+    <script src="./code.js"></script>       
 </head>
 <body>
 <header>
@@ -36,7 +37,7 @@
 </header>
 
 <main>
-    
+    <div id="scrollToTopBtn"></div>
     <div class="banner">
         <img src="./image/main_banner2.png" width="100%" alt="банер">
         <img src="./image/waves_1.png" width="100%" style="margin-top: -100px;" alt="волны">
@@ -59,7 +60,7 @@
                     <div class="card">
                         <div class="card-text">
                             <p class="card-name">Lorem ipsum</p>
-                            <p class="card-descr">Vivamus mi sem</p>
+                            <p class="card-descr">Vivamus mi sem, Maecenas vestibulum laoreet sodales.</p>
                         </div>
                         <div class="card-details">
                             <p class="card-weight">1 кг</p>
@@ -305,31 +306,29 @@
             <p>Made by Karolina RM © 2024</p>
         </div>
     </div>
-    <div id="scrollToTopBtn"></div>
-    
 </footer>
 <script>
-     // Получить кнопку
-     const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+// Получить кнопку
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
-    // Показать кнопку, когда пользователь прокрутил вниз на 100 пикселей
-    window.onscroll = function() {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            scrollToTopBtn.style.display = "block";
-        } else {
-            scrollToTopBtn.style.display = "none";
-        }
-    };
+// Показать кнопку, когда пользователь прокрутил вниз на 100 пикселей
+window.onscroll = function () {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+};
 
-    // При нажатии на кнопку прокрутить вверх
-    scrollToTopBtn.onclick = function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth' // Плавная прокрутка
-        });
-    };
+// При нажатии на кнопку прокрутить вверх
+scrollToTopBtn.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Плавная прокрутка
+    });
+};
 
-    function myFunction() {
+function myFunction() {
     var x = document.getElementById("nav");
     if (x.className === "topnav") {
         x.className += " responsive";
@@ -338,6 +337,5 @@
     }
 }
 </script>
-
 </body>
 </html>

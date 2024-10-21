@@ -10,12 +10,17 @@
     --color-background: #ffffff;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     background-color: var(--color-background);
     color: var(--color-black);
     font-weight: 400;
-    margin: 0;
 }
 
 header {
@@ -161,23 +166,6 @@ nav .icon {
     margin: 0px;
 }
 
-.cards-container {
-    /*display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: flex-start;
-    overflow: hidden;
-    flex-wrap: nowrap;*/
-    display: grid;
-    grid-template-columns: calc((100% - 3 * 20px)/4);
-    grid-template-rows: auto;
-    grid-auto-flow: column;
-    overflow: hidden;
-    margin: 0px -28px;
-    padding: 28px 28px;
-    gap: 20px;
-}
-
 .card-container {
     border-radius: 20px;
     box-shadow: 0px 0px 21px 6px rgba(116, 116, 116, 0.1);
@@ -205,6 +193,7 @@ nav .icon {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    gap: 7px;
 }
 
 .card-text {
@@ -214,15 +203,22 @@ nav .icon {
 }
 
 .card-name {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
 }
 
 .card-descr {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
-    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
 }
 
 .card-details {
@@ -235,16 +231,15 @@ nav .icon {
 }
 
 .card-weight {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--color-grey-dark);
     margin: 0;
 }
 
 .card-price {
-    font-size: 36px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--color-blue);    
-    margin: 0;
 }
 
 #about-us {
@@ -273,6 +268,7 @@ nav .icon {
     display: flex;
     gap: 7px;
     flex-direction: column;
+    width: 50%;
 }
 
 .shops-section {
@@ -574,7 +570,7 @@ nav .icon {
     right: 14px;
 }
 
-.menu-cards-container {
+.menu-cards-container, .cards-container {
     /*display: flex;
     flex-direction: row;
     justify-content: center;
@@ -584,14 +580,18 @@ nav .icon {
     padding: 28px 28px;
     gap: 20px;*/
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
     grid-auto-flow: row;
     justify-content: center;
     overflow: hidden;
     margin: 0px -28px;
     padding: 28px 28px;
     gap: 20px;
+}
+
+.cards-container {
+    grid-template-rows: repeat(1,1fr);
 }
 
 .cont {
@@ -637,11 +637,11 @@ nav .icon {
     box-shadow: 0px 0px 21px 6px rgba(116,116,116,0.1);
     color: var(--color-black);
     transition: box-shadow 0.4s ease-in-out;
+    gap: 28px;
 } 
 
 .news-card img {
     border-radius: 20px;
-    margin-left: 28px;
     width: 40%;
     height: 100%;
 }   
@@ -658,20 +658,28 @@ nav .icon {
 }
 
 .news-text h2 {
-    font-weight: 600;    
-    font-size: 32px;    
+    font-weight: 600; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;      
+    font-size: 3vw;    
     color: var(--color-black);
 }
 
 .news-text p {
     font-weight: 400;    
-    font-size: 18px;    
+    font-size: 1.5vw;    
     color: var(--color-grey-dark);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
 }
 
 .news-text span {
     font-weight: 500;    
-    font-size: 18px;    
+    font-size: 1.5vw;    
     color: var(--color-purple);
 }
 
@@ -846,10 +854,6 @@ i.fa.fa-bars {
         flex-wrap: wrap;        
     }
 
-    .search-form {
-        margin-top: 5px;
-    }
-
     .newsletter {
         width: 100%;
     }
@@ -892,6 +896,21 @@ i.fa.fa-bars {
         margin-left: 5px;
         right: 10px;
     }
+
+    .news-cards {
+        margin-top: 14px;
+        margin-bottom: 14px;
+        gap: 14px;
+    }
+    
+    .news-card {
+        gap: 14px;
+        padding: 14px;
+    }   
+    
+    .news-text {
+        gap: 7px;
+    }
 }
 
 
@@ -932,7 +951,7 @@ i.fa.fa-bars {
         box-shadow: 0px 0px 21px 6px rgba(116,116,116,0.1);
         margin-top: 7px;
         margin-right: -14px;
-        width: 130px;
+        width: 168px;
     }
 
     .topnav.responsive .nav-first{
@@ -1025,13 +1044,6 @@ i.fa.fa-bars {
     }
     */
 
-    .cards-container {
-        flex-wrap: wrap;
-    }
-
-    .card-container {
-        /*max-width: 325px;*/
-    }
 
     #about-us {
         padding-top: 35px;
@@ -1049,6 +1061,10 @@ i.fa.fa-bars {
         width: 100%;
         aspect-ratio: 3 / 2;
     }
+
+    .about-inf {
+        width: 100%;
+    }
     
     .shops-section {
         margin-top: 35px;
@@ -1056,6 +1072,11 @@ i.fa.fa-bars {
     
     .shop-cards {
         margin-top: 21px;
+    }
+
+    .shop-card {
+        max-width: none;
+        width: 100%;
     }
     
     .footer {
@@ -1337,14 +1358,14 @@ i.fa.fa-bars {
 
 /*меню*/
 @media (min-width: 2000px) {
-    .menu-cards-container {
-        grid-template-columns: auto auto auto auto auto;
+    .menu-cards-container, .cards-container {
+        grid-template-columns: repeat(5,1fr);
     }
 }
 
 @media (max-width: 1120px) {
-    .menu-cards-container {
-        grid-template-columns: auto auto auto;
+    .menu-cards-container, .cards-container {
+        grid-template-columns: repeat(3,1fr);
     }
 
     .filters {
@@ -1353,15 +1374,25 @@ i.fa.fa-bars {
 }
 
 @media (max-width: 900px) {
-    .menu-cards-container {
-        grid-template-columns: auto auto;
+    .menu-cards-container, .cards-container {
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
 @media (max-width: 590px) {
-    .menu-cards-container {
-        grid-template-columns: auto;
+    .menu-cards-container, .cards-container {
+        grid-template-columns: repeat(1,1fr);
     }
+
+    .news-card {
+        flex-direction: column-reverse;
+    }
+
+    .news-card img {
+        width: 100%;
+        height: 50%;
+        object-fit:fill;
+    } 
 }
 /**/
 

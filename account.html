@@ -8,8 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
-    <title>Особистий кабінет</title>        
+    <title>Особистий кабінет</title>  
+    <script src="./code.js"></script>             
 </head>
 <body>
     <header>
@@ -30,177 +32,208 @@
                     <a href="./account.html" class="active"><img src="./image/account.png" height="39px"></a>
                     <a href="./shopping_card.html"><img src="./image/shopping_cart.png" height="39px"></a>
                 </div>
-            </div>   
+            </div>
         </nav>
     </header>
-
-<main>
-    <h1>Особистий кабінет</h1>
-    <p>Вітаємо, Karolina Rm</p>
-    <button>ВИЙТИ</button>
-    <div>
-        <h2>Персональні дані</h2>
-        <form action=''>
-            <label for="lname">Прізвище</label><br>
-            <input type="text" id="lname" name="lname" value=""><br>
-            <label for="fname">Ім’я</label><br>
-            <input type="text" id="fname" name="fname" value=""><br>
-            <label for="phnumber">Контактний телефон</label><br>
-            <input type="text" id="phnumber" name="phnumber" value=""><br>
-            <label for="email">Електронна пошта</label><br>
-            <input type="text" id="email" name="email" value=""><br>
-            <label for="birthday">Дата народження</label><br>
-            <input type="text" id="birthday" name="birthday" value=""><br>
-            <label for="gender">Стать</label><br>
-            <input type="text" id="gender" name="gender" value=""><br>
-            <input type="submit" value="ЗБЕРЕГТИ ДАНІ">
-        </form>
-    </div>
-
-    <div>
-        <h2>Адреси  доставки</h2>
-        <form action=''>
-            <label for="city">Місто</label><br>
-            <input type="text" id="city" name="city" value=""><br>
-            <label for="street">Вулиця</label><br>
-            <input type="text" id="street" name="street" value=""><br>
-            <label for="house">Будинок</label><br>
-            <input type="text" id="house" name="house" value=""><br>
-            <label for="apart">Квартира</label><br>
-            <input type="text" id="apart" name="apart" value=""><br>
-            <label for="floor">Поверх</label><br>
-            <input type="text" id="floor" name="floor" value=""><br>
-            <input type="submit" value="ЗБЕРЕГТИ АДРЕСУ">
-        </form>
-
-        <h2>Збережені адреси</h2>
-        <ul>
-            <li>
-                <p>Київ, вулиця Володимирська, будинок 45, квартира 12, поверх 5.</p>
-            </li>
-            <li>
-                <p>Львів, вулиця Шевченка, будинок 18, квартира 25, поверх 7.</p>
-            </li>
-            <li>
-                <p>Одеса, вулиця Дерибасівська, будинок 16, квартира 24, поверх 3.</p>
-            </li>
-        </ul>
-    </div>
-
-    <div>
-        <h2>Історія замовлень</h2>
-        <ul>
-            <li>
-                <h3>24.05.24</h3>
-                <button><img src="./image/Chevron down.png" alt=""></button>
-            </li>
-            <li>
-                <h3>02.04.24</h3>
-                <button><img src="./image/Chevron down.png" alt=""></button>
-            </li>
-            <li>
-                <h3>31.01.24</h3>
-                <button><img src="./image/Chevron up.png" alt=""></button>
-                <div>                
-                    <p>Київ, вулиця Володимирська, будинок 45, квартира 12, поверх 5.</p>
-                    <div class="card">
-                        <img src="./image/image 1.png" alt="Продукт 2">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>1 кг</p>
-                        <button class="product-button"><img src="./image/shopping_cart.png"></button>
-                    </div>
-                    <div class="card">
-                        <img src="./image/image 2.png" alt="Продукт 2">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>1 кг</p>
-                        <button class="product-button"><img src="./image/shopping_cart.png"></button>
-                    </div>
-                    <div class="card">
-                        <img src="./image/image 3.png" alt="Продукт 2">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>1 кг</p>
-                        <button class="product-button"><img src="./image/shopping_cart.png"></button>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-
-    <div>
-        <h2>Змінити пароль</h2>
-        <form action=''>
-            <label for="oldpass">Старий пароль</label><br>
-            <input type="password" id="oldpass" name="oldpass" value=""><br>
-            <label for="newpass">Новий пароль</label><br>
-            <input type="password" id="newpass" name="newpass" value=""><br>
-            <label for="confirmpass">Підтвердити пароль</label><br>
-            <input type="password" id="confirmpass" name="confirmpass" value=""><br>
-            <input type="submit" value="ЗМІНИТИ ПАРОЛЬ">
-        </form>
-    </div>
-</main>
-
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-sections">
-            <div class="footer-section">
-                <p>Графік роботи</p>
-                <div class="footer-sched">
-                    <p>Онлайн замовлення: 9:00-18:00</p>
-                    <p>Кондитерські: <a href="./contacts.html" class="tap-here">тисни тут</a></p>
-                </div>
-            </div>
-            <div class="footer-section">
-                <p>Ми у соцмережах: </p>
-                <div class="footer-social-media">
-                    <a href="#"><img src="./image/inst.png" alt=""></a>
-                    <a href="#"><img src="./image/facebook.png" alt=""></a>
-                    <a href="#"><img src="./image/map.png" alt=""></a> 
-                </div>
-            </div>
-            <div class="footer-section">
-                <p>Швидка навігація:</p>
-                <div class="footer-navigation">
-                    <div class="footer-section">
-                        <a href="./index.html#new-products">Новинки</a>
-                        <a href="./index.html#seasonal-products">Сезонні пропозиції</a>
-                        <a href="./index.html#about-us">Про нас</a>
-                        <a href="./index.html#reviews">Відгуки</a>
-                    </div>
-                    <div class="footer-section">
-                        <a href="./menu.html">Меню</a>
-                        <a href="./news.html">Новини</a>
-                        <a href="./contacts.html">Контакти</a>
-                        <a href="./account.html">Особистий кабінет</a>
-                        <a href="./shopping_card.html">Кошик</a>
-                        <a href="">Доставка та оплата</a>
-                    </div>
-                    <div class="footer-section">
-                        <a href="">Політика конфіденційності</a>
-                        <a href="">Умови користування</a>
-                        <a href="">Політика використання файлів cookie</a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        
-    </div>
-    <div class="footer-sections-end">
-        <form action="#" class="newsletter" id="form" netlify>
-            <p>Підпишіться на розсилку</p>
-            <div class="newsletter-form">
-                <input type="email" class="newsletter-input" placeholder="Email">
-                <button class="newsletter-button">Підписатися<img src="./image/icon send.png" alt="" width="28px"></button>
-            </div>
-        </form>
-        <div class="copyright">
-            <p>Made by Karolina RM © 2024</p>
-        </div>
-    </div>
     
-</footer>
+    <main>
+        <div id="scrollToTopBtn"></div>
+        <h1>Особистий кабінет</h1>
+        <p>Вітаємо, Karolina Rm</p>
+        <button>ВИЙТИ</button>
+        <div>
+            <h2>Персональні дані</h2>
+            <form action=''>
+                <label for="lname">Прізвище</label><br>
+                <input type="text" id="lname" name="lname" value=""><br>
+                <label for="fname">Ім’я</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="phnumber">Контактний телефон</label><br>
+                <input type="text" id="phnumber" name="phnumber" value=""><br>
+                <label for="email">Електронна пошта</label><br>
+                <input type="text" id="email" name="email" value=""><br>
+                <label for="birthday">Дата народження</label><br>
+                <input type="text" id="birthday" name="birthday" value=""><br>
+                <label for="gender">Стать</label><br>
+                <input type="text" id="gender" name="gender" value=""><br>
+                <input type="submit" value="ЗБЕРЕГТИ ДАНІ">
+            </form>
+        </div>
+    
+        <div>
+            <h2>Адреси доставки</h2>
+            <form action=''>
+                <label for="city">Місто</label><br>
+                <input type="text" id="city" name="city" value=""><br>
+                <label for="street">Вулиця</label><br>
+                <input type="text" id="street" name="street" value=""><br>
+                <label for="house">Будинок</label><br>
+                <input type="text" id="house" name="house" value=""><br>
+                <label for="apart">Квартира</label><br>
+                <input type="text" id="apart" name="apart" value=""><br>
+                <label for="floor">Поверх</label><br>
+                <input type="text" id="floor" name="floor" value=""><br>
+                <input type="submit" value="ЗБЕРЕГТИ АДРЕСУ">
+            </form>
+    
+            <h2>Збережені адреси</h2>
+            <ul>
+                <li>
+                    <p>Київ, вулиця Володимирська, будинок 45, квартира 12, поверх 5.</p>
+                </li>
+                <li>
+                    <p>Львів, вулиця Шевченка, будинок 18, квартира 25, поверх 7.</p>
+                </li>
+                <li>
+                    <p>Одеса, вулиця Дерибасівська, будинок 16, квартира 24, поверх 3.</p>
+                </li>
+            </ul>
+        </div>
+    
+        <div>
+            <h2>Історія замовлень</h2>
+            <ul>
+                <li>
+                    <h3>24.05.24</h3>
+                    <button><img src="./image/Chevron down.png" alt=""></button>
+                </li>
+                <li>
+                    <h3>02.04.24</h3>
+                    <button><img src="./image/Chevron down.png" alt=""></button>
+                </li>
+                <li>
+                    <h3>31.01.24</h3>
+                    <button><img src="./image/Chevron up.png" alt=""></button>
+                    <div>
+                        <p>Київ, вулиця Володимирська, будинок 45, квартира 12, поверх 5.</p>
+                        <div class="card">
+                            <img src="./image/image 1.png" alt="Продукт 2">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>1 кг</p>
+                            <button class="product-button"><img src="./image/shopping_cart.png"></button>
+                        </div>
+                        <div class="card">
+                            <img src="./image/image 2.png" alt="Продукт 2">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>1 кг</p>
+                            <button class="product-button"><img src="./image/shopping_cart.png"></button>
+                        </div>
+                        <div class="card">
+                            <img src="./image/image 3.png" alt="Продукт 2">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>1 кг</p>
+                            <button class="product-button"><img src="./image/shopping_cart.png"></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    
+    
+        <div>
+            <h2>Змінити пароль</h2>
+            <form action=''>
+                <label for="oldpass">Старий пароль</label><br>
+                <input type="password" id="oldpass" name="oldpass" value=""><br>
+                <label for="newpass">Новий пароль</label><br>
+                <input type="password" id="newpass" name="newpass" value=""><br>
+                <label for="confirmpass">Підтвердити пароль</label><br>
+                <input type="password" id="confirmpass" name="confirmpass" value=""><br>
+                <input type="submit" value="ЗМІНИТИ ПАРОЛЬ">
+            </form>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <p>Графік роботи</p>
+                    <div class="footer-sched">
+                        <p>Онлайн замовлення: 9:00-18:00</p>
+                        <p>Кондитерські: <a href="./contacts.html" class="tap-here">тисни тут</a></p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <p>Ми у соцмережах: </p>
+                    <div class="footer-social-media">
+                        <a href="#"><img src="./image/inst.png" alt=""></a>
+                        <a href="#"><img src="./image/facebook.png" alt=""></a>
+                        <a href="#"><img src="./image/map.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <p>Швидка навігація:</p>
+                    <div class="footer-navigation">
+                        <div class="footer-section">
+                            <a href="./index.html#new-products">Новинки</a>
+                            <a href="./index.html#seasonal-products">Сезонні пропозиції</a>
+                            <a href="./index.html#about-us">Про нас</a>
+                            <a href="./index.html#reviews">Відгуки</a>
+                        </div>
+                        <div class="footer-section">
+                            <a href="./menu.html">Меню</a>
+                            <a href="./news.html">Новини</a>
+                            <a href="./contacts.html">Контакти</a>
+                            <a href="./account.html">Особистий кабінет</a>
+                            <a href="./shopping_card.html">Кошик</a>
+                            <a href="">Доставка та оплата</a>
+                        </div>
+                        <div class="footer-section">
+                            <a href="">Політика конфіденційності</a>
+                            <a href="">Умови користування</a>
+                            <a href="">Політика використання файлів cookie</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+        <div class="footer-sections-end">
+            <form action="#" class="newsletter" id="form" netlify>
+                <p>Підпишіться на розсилку</p>
+                <div class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Email">
+                    <button class="newsletter-button">Підписатися<img src="./image/icon send.png" alt=""
+                            width="28px"></button>
+                </div>
+            </form>
+            <div class="copyright">
+                <p>Made by Karolina RM © 2024</p>
+            </div>
+        </div>
+    
+    </footer>
+<script>
+    // Получить кнопку
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
+    // Показать кнопку, когда пользователь прокрутил вниз на 100 пикселей
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    // При нажатии на кнопку прокрутить вверх
+    scrollToTopBtn.onclick = function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Плавная прокрутка
+        });
+    };
+
+    function myFunction() {
+        var x = document.getElementById("nav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
 </body>
 </html>
