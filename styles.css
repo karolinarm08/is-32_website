@@ -667,16 +667,6 @@ nav .icon {
     color: var(--color-black);
 }
 
-.news-text p {
-    font-weight: 400;    
-    font-size: 12px;    
-    color: var(--color-grey-dark);
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden; 
-}
-
 .news-text span {
     font-weight: 500;    
     font-size: 12px;    
