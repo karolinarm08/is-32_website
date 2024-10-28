@@ -1,217 +1,222 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
-    <title>Контакти</title>        
+    <title>Контакти</title>
 </head>
-<body>
-<header>
-    <nav id="nav" class="topnav">
-        <div class="nav-logo"><a href="./index.html">Méz</a></div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <div class="nav-main">
-            <div class="nav-first">
-                <a href="./menu.html">Меню</a>
-                <a href="./index.html#about-us">Про нас</a>
-                <a href="./news.html">Новини</a>
-                <a href="./info.html">Інформація</a>
-                <a href="./contacts.html" class="active">Контакти</a>
-            </div>
-            <div class="nav-second">
-                <a href="./account.html"><img src="./image/account.png" height="39px"></a>
-                <a href="./shopping_card.html"><img src="./image/shopping_cart.png" height="39px"></a>
-            </div>
-        </div>   
-    </nav>
-</header>
-<main>
-    <div id="scrollToTopBtn"></div>
-    <div class="banner">
-        <img src="./image/waves_4.png" width="100%" alt="волны">
-    </div>
-    <div class="main">
-        <h2 class="title">Наші кондитерські</h2>
-        <div class="filters">
-            <select class="sort-form">
-                <option class="option" value="">Сортувати за...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-            <form class="search-form">
-                <input class="search-input" type="text" placeholder="Пошук...">
-                <button class="search-button" type="submit"><img src="./image/search.svg" alt=""></button>
-            </form>
-        </div>
-        <div class="cont-cards">
-            <div class="cont-card">
-                <div class="cont-text">
-                    <div>
-                        <h2 class="cont-add">Адреса кондитерської 1</h2>
-                        <p class="cont-sched">Графік роботи: 8:00-20:00</p>
-                        <div class="cont-phones">
-                            <p>Контактні телефони:</p>
-                            <p>+380501234567</p>
-                            <p>+380661234567</p>
-                        </div>
-                    </div>
-                    <p class="cont-open">Відчинено</p>
-                </div>
-                <img src="./image/image 22.png" alt="">
-            </div> 
-            <div class="cont-card">
-                <div class="cont-text">
-                    <div>
-                        <h2 class="cont-add">Адреса кондитерської 2</h2>
-                        <p class="cont-sched">Графік роботи: 9:00-19:00</p>
-                        <div class="cont-phones">
-                            <p>Контактні телефони:</p>
-                            <p>+380501234567</p>
-                            <p>+380661234567</p>
-                        </div>
-                    </div>
-                    <p class="cont-close">Зачинено</p>
-                </div>
-                <img src="./image/image 23.png" alt="">
-            </div>  
-            <div class="cont-card">
-                <div class="cont-text">
-                    <div>
-                        <h2 class="cont-add">Адреса кондитерської 3</h2>
-                        <p class="cont-sched">Графік роботи: 8:00-20:00</p>
-                        <div class="cont-phones">
-                            <p>Контактні телефони:</p>
-                            <p>+380501234567</p>
-                            <p>+380661234567</p>
-                        </div>
-                    </div>
-                    <p class="cont-open">Відчинено</p>
-                </div>
-                <img src="./image/image 24.png" alt="">
-            </div>  
-            <div class="cont-card">
-                <div class="cont-text">
-                    <div>
-                        <h2 class="cont-add">Адреса кондитерської 4</h2>
-                        <p class="cont-sched">Графік роботи: 8:00-20:00</p>
-                        <div class="cont-phones">
-                            <p>Контактні телефони:</p>
-                            <p>+380501234567</p>
-                            <p>+380661234567</p>
-                        </div>
-                    </div>
-                    <p class="cont-open">Відчинено</p>
-                </div>
-                <img src="./image/image 25.png" alt="">
-            </div>  
-        </div>        
-        <div class="cont">
-            <button class="cont-button"><img src="./image/Line 1.png"></button>    
-        </div>
-    </div>
-</main>
 
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-sections">
-            <div class="footer-section">
-                <p>Графік роботи</p>
-                <div class="footer-sched">
-                    <p>Онлайн замовлення: 9:00-18:00</p>
-                    <p>Кондитерські: <a href="./contacts.html" class="tap-here">тисни тут</a></p>
+<body>
+    <header>
+        <nav id="nav" class="topnav">
+            <div class="nav-logo"><a href="./index.html">Méz</a></div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="nav-main">
+                <div class="nav-first">
+                    <a href="./menu.html">Меню</a>
+                    <a href="./index.html#about-us">Про нас</a>
+                    <a href="./news.html">Новини</a>
+                    <a href="./info.html">Інформація</a>
+                    <a href="./contacts.html" class="active">Контакти</a>
+                </div>
+                <div class="nav-second">
+                    <a href="./account.html"><img src="./image/account.png" height="39px"></a>
+                    <a href="./shopping_card.html"><img src="./image/shopping_cart.png" height="39px"></a>
                 </div>
             </div>
-            <div class="footer-section">
-                <p>Ми у соцмережах: </p>
-                <div class="footer-social-media">
-                    <a href="#"><img src="./image/inst.png" alt=""></a>
-                    <a href="#"><img src="./image/facebook.png" alt=""></a>
-                    <a href="#"><img src="./image/map.png" alt=""></a> 
-                </div>
-            </div>
-            <div class="footer-section">
-                <p>Швидка навігація:</p>
-                <div class="footer-navigation">
-                    <div class="footer-section">
-                        <a href="./index.html#new-products">Новинки</a>
-                        <a href="./index.html#seasonal-products">Сезонні пропозиції</a>
-                        <a href="./index.html#about-us">Про нас</a>
-                        <a href="./index.html#reviews">Відгуки</a>
-                    </div>
-                    <div class="footer-section">
-                        <a href="./menu.html">Меню</a>
-                        <a href="./news.html">Новини</a>
-                        <a href="./contacts.html">Контакти</a>
-                        <a href="./account.html">Особистий кабінет</a>
-                        <a href="./shopping_card.html">Кошик</a>
-                        <a href="">Доставка та оплата</a>
-                    </div>
-                    <div class="footer-section">
-                        <a href="">Політика конфіденційності</a>
-                        <a href="">Умови користування</a>
-                        <a href="">Політика використання файлів cookie</a>
-                    </div>
-                </div>
-            </div>
-            
+        </nav>
+    </header>
+    <main>
+        <div id="scrollToTopBtn"></div>
+        <div class="banner">
+            <img src="./image/waves_4.png" width="100%" alt="волны">
         </div>
-        
-    </div>
-    <div class="footer-sections-end">
-        <form action="#" class="newsletter" id="form" netlify>
-            <p>Підпишіться на розсилку</p>
-            <div class="newsletter-form">
-                <input type="email" class="newsletter-input" placeholder="Email">
-                <button class="newsletter-button">Підписатися<img src="./image/icon send.png" alt="" width="28px"></button>
+        <div class="main">
+            <h2 class="title">Наші кондитерські</h2>
+            <div class="filters">
+                <select class="sort-form">
+                    <option class="option" value="">Сортувати за...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <form class="search-form">
+                    <input class="search-input" type="text" placeholder="Пошук...">
+                    <button class="search-button" type="submit"><img src="./image/search.svg" alt=""></button>
+                </form>
             </div>
-        </form>
-        <div class="copyright">
-            <p>Made by Karolina RM © 2024</p>
+            <div class="cont-cards">
+                <div class="cont-card">
+                    <div class="cont-text">
+                        <div>
+                            <h2 class="cont-add">Адреса кондитерської 1</h2>
+                            <p class="cont-sched">Графік роботи: 8:00-20:00</p>
+                            <div class="cont-phones">
+                                <p>Контактні телефони:</p>
+                                <p>+380501234567</p>
+                                <p>+380661234567</p>
+                            </div>
+                        </div>
+                        <p class="cont-open">Відчинено</p>
+                    </div>
+                    <img src="./image/image 22.png" alt="">
+                </div>
+                <div class="cont-card">
+                    <div class="cont-text">
+                        <div>
+                            <h2 class="cont-add">Адреса кондитерської 2</h2>
+                            <p class="cont-sched">Графік роботи: 9:00-19:00</p>
+                            <div class="cont-phones">
+                                <p>Контактні телефони:</p>
+                                <p>+380501234567</p>
+                                <p>+380661234567</p>
+                            </div>
+                        </div>
+                        <p class="cont-close">Зачинено</p>
+                    </div>
+                    <img src="./image/image 23.png" alt="">
+                </div>
+                <div class="cont-card">
+                    <div class="cont-text">
+                        <div>
+                            <h2 class="cont-add">Адреса кондитерської 3</h2>
+                            <p class="cont-sched">Графік роботи: 8:00-20:00</p>
+                            <div class="cont-phones">
+                                <p>Контактні телефони:</p>
+                                <p>+380501234567</p>
+                                <p>+380661234567</p>
+                            </div>
+                        </div>
+                        <p class="cont-open">Відчинено</p>
+                    </div>
+                    <img src="./image/image 24.png" alt="">
+                </div>
+                <div class="cont-card">
+                    <div class="cont-text">
+                        <div>
+                            <h2 class="cont-add">Адреса кондитерської 4</h2>
+                            <p class="cont-sched">Графік роботи: 8:00-20:00</p>
+                            <div class="cont-phones">
+                                <p>Контактні телефони:</p>
+                                <p>+380501234567</p>
+                                <p>+380661234567</p>
+                            </div>
+                        </div>
+                        <p class="cont-open">Відчинено</p>
+                    </div>
+                    <img src="./image/image 25.png" alt="">
+                </div>
+            </div>
+            <div class="cont">
+                <button class="cont-button"><img src="./image/Line 1.png"></button>
+            </div>
         </div>
-    </div>
-    
-</footer>
-<script>
-    // Получить кнопку
-    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-    
-    // Показать кнопку, когда пользователь прокрутил вниз на 100 пикселей
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            scrollToTopBtn.style.display = "block";
-        } else {
-            scrollToTopBtn.style.display = "none";
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <p>Графік роботи</p>
+                    <div class="footer-sched">
+                        <p>Онлайн замовлення: 9:00-18:00</p>
+                        <p>Кондитерські: <a href="./contacts.html" class="tap-here">тисни тут</a></p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <p>Ми у соцмережах: </p>
+                    <div class="footer-social-media">
+                        <a href="#"><img src="./image/inst.png" alt=""></a>
+                        <a href="#"><img src="./image/facebook.png" alt=""></a>
+                        <a href="#"><img src="./image/map.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <p>Швидка навігація:</p>
+                    <div class="footer-navigation">
+                        <div class="footer-section">
+                            <a href="./index.html#new-products">Новинки</a>
+                            <a href="./index.html#seasonal-products">Сезонні пропозиції</a>
+                            <a href="./index.html#about-us">Про нас</a>
+                            <a href="./index.html#reviews">Відгуки</a>
+                        </div>
+                        <div class="footer-section">
+                            <a href="./menu.html">Меню</a>
+                            <a href="./news.html">Новини</a>
+                            <a href="./contacts.html">Контакти</a>
+                            <a href="./account.html">Особистий кабінет</a>
+                            <a href="./shopping_card.html">Кошик</a>
+                            <a href="">Доставка та оплата</a>
+                        </div>
+                        <div class="footer-section">
+                            <a href="">Політика конфіденційності</a>
+                            <a href="">Умови користування</a>
+                            <a href="">Політика використання файлів cookie</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer-sections-end">
+            <form action="#" class="newsletter" id="form" netlify>
+                <p>Підпишіться на розсилку</p>
+                <div class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Email">
+                    <button class="newsletter-button">Підписатися<img src="./image/icon send.png" alt=""
+                            width="28px"></button>
+                </div>
+            </form>
+            <div class="copyright">
+                <p>Made by Karolina RM © 2024</p>
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        // Получить кнопку
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+        // Показать кнопку, когда пользователь прокрутил вниз на 100 пикселей
+        window.onscroll = function () {
+            if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // При нажатии на кнопку прокрутить вверх
+        scrollToTopBtn.onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Плавная прокрутка
+            });
+        };
+
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
-    };
-    
-    // При нажатии на кнопку прокрутить вверх
-    scrollToTopBtn.onclick = function () {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth' // Плавная прокрутка
-        });
-    };
-    
-    function myFunction() {
-        var x = document.getElementById("nav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
     </script>
 </body>
+
 </html>
