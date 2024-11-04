@@ -18,7 +18,7 @@
 <body>
     <header>
         <nav id="nav" class="topnav">
-            <div class="nav-logo"><a href="./index.html">Méz</a></div>
+            <div class="nav-logo"><a href="./index.html">RUBY</a></div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -39,6 +39,8 @@
     </header>
     <main>
         <div id="scrollToTopBtn"></div>
+        <script src="code.js"></script>       
+
         <div class="banner">
             <img src="./image/waves_4.png" width="100%" alt="волны">
         </div>
@@ -187,36 +189,7 @@
         </div>
 
     </footer>
-    <script>
-        // Получить кнопку
-        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
-        // Показать кнопку, когда пользователь прокрутил вниз на 100 пикселей
-        window.onscroll = function () {
-            if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-                scrollToTopBtn.style.display = "block";
-            } else {
-                scrollToTopBtn.style.display = "none";
-            }
-        };
-
-        // При нажатии на кнопку прокрутить вверх
-        scrollToTopBtn.onclick = function () {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth' // Плавная прокрутка
-            });
-        };
-
-        function myFunction() {
-            var x = document.getElementById("nav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
 </body>
 
 </html>
