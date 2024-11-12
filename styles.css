@@ -21,6 +21,8 @@ body {
     background-color: var(--color-background);
     color: var(--color-black);
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -87,6 +89,10 @@ h2 {
     font-weight: 400;
 }
 
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
 
 h1,
 h2,
@@ -95,10 +101,11 @@ p {
     margin: 0px;
 }
 
+
+
 section,
 .main {
-    /*margin: 35px;*/
-    margin: 3vw;
+    margin: 35px;
 }
 
 section {
@@ -537,7 +544,7 @@ nav .icon {
     padding: 0;
 }
 
-.filter-button {
+.filter-button, .confirm-button {
     color: var(--color-purple);
     background-color: var(--color-background);
     border-radius: 20px;
@@ -547,7 +554,7 @@ nav .icon {
     font-weight: 600;
 }
 
-.filter-button:hover {
+.filter-button:hover, .confirm-button:hover {
     color: var(--color-background);
     background-color: var(--color-purple);
 }
@@ -824,6 +831,78 @@ nav .icon {
     font-size: 30px;
     font-weight: 500;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    gap: 35px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    gap: 14px;
+}
+
+.sidebar button {
+    text-align: start;
+    width: 170px;
+    font-size: 16px;
+}
+
+.content {
+    width: 100%;
+    border: none;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    color: var(--color-purple);
+    font-weight: 600;
+}
+
+label {
+    font-size: 16px;
+}
+
+.account-input {
+    width: 301px;
+    padding: 14px;
+    margin: 7px 0;
+    background-color: var(--color-background);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: var(--color-black);
+    border-radius: 14px;
+    border: 1px solid var(--color-grey-light);
+    outline: 0;
+}
+
+.confirm-button {
+    border-radius: 14px; 
+    width: 150px;
+}
+
+.content>div>form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: row;
+    justify-content: center;
+    overflow: hidden;
+    gap: 14px;
+    margin-top: 14px;
+    width: fit-content;
+}
+
+
 
 i.fa.fa-bars {
     display: flex;
