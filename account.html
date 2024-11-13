@@ -42,9 +42,11 @@
             <img src="./image/waves_4.png" width="100%" alt="волны">
         </div>
         <div class="main">   
-            <h1>Особистий кабінет</h1>
-            <p>Вітаємо, Karolina Rm</p>
-            <button>ВИЙТИ</button>
+            <h2 class="title">Особистий кабінет</h2>
+            <div class="introduction">
+                <p>Вітаємо, Karolina Rm</p>
+                <button class="confirm-button">ВИЙТИ</button>
+            </div>
             <div class="container">
                 <div class="sidebar">
                     <button onclick="showSection('personal-inf', this)">Персональні дані</button>
@@ -92,20 +94,25 @@
                     <div id="delivery-addresses" class="hidden">
                         <h3>Адреси доставки</h3>
                         <form action=''>
-                            <div><label for="city">Місто</label><br>
-                            <input type="text" id="city" name="city" value="" class="account-input"><br>
+                            <div class="city">
+                                <label for="city">Місто</label><br>
+                                <input type="text" id="city" name="city" value="" class="account-input"><br>
                             </div>
-                            <div><label for="street">Вулиця</label><br>
-                            <input type="text" id="street" name="street" value="" class="account-input"><br>
+                            <div class="street">
+                                <label for="street">Вулиця</label><br>
+                                <input type="text" id="street" name="street" value="" class="account-input"><br>
                             </div>
-                            <div><label for="house">Будинок</label><br>
-                            <input type="text" id="house" name="house" value="" class="account-input"><br>
+                            <div class="house">
+                                <label for="house">Будинок</label><br>
+                                <input type="text" id="house" name="house" value="" class="account-input"><br>
                             </div>
-                            <div><label for="apart">Квартира</label><br>
-                            <input type="text" id="apart" name="apart" value="" class="account-input"><br>
+                            <div class="apart">
+                                <label for="apart">Квартира</label><br>
+                                <input type="text" id="apart" name="apart" value="" class="account-input"><br>
                             </div>
-                            <div><label for="floor">Поверх</label><br>
-                            <input type="text" id="floor" name="floor" value="" class="account-input"><br>
+                            <div class="floor">
+                                <label for="floor">Поверх</label><br>
+                                <input type="text" id="floor" name="floor" value="" class="account-input"><br>
                             </div>
                             <input type="submit" value="ЗБЕРЕГТИ АДРЕСУ" class="confirm-button">
                         </form>
