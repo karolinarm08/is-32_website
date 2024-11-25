@@ -37,70 +37,210 @@
 
 <main>
     <div id="scrollToTopBtn"></div>
-    <script src="code.js"></script>       
-    <div>***</div>
-</main>
-
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-sections">
-            <div class="footer-section">
-                <p>Графік роботи</p>
-                <div class="footer-sched">
-                    <p>Онлайн замовлення: 9:00-18:00</p>
-                    <p>Кондитерські: <a href="./contacts.html" class="tap-here">тисни тут</a></p>
-                </div>
-            </div>
-            <div class="footer-section">
-                <p>Ми у соцмережах: </p>
-                <div class="footer-social-media">
-                    <a href="#"><img src="./image/inst.png" alt=""></a>
-                    <a href="#"><img src="./image/facebook.png" alt=""></a>
-                    <a href="#"><img src="./image/map.png" alt=""></a> 
-                </div>
-            </div>
-            <div class="footer-section">
-                <p>Швидка навігація:</p>
-                <div class="footer-navigation">
-                    <div class="footer-section">
-                        <a href="./index.html#new-products">Новинки</a>
-                        <a href="./index.html#seasonal-products">Сезонні пропозиції</a>
-                        <a href="./index.html#about-us">Про нас</a>
-                        <a href="./index.html#reviews">Відгуки</a>
-                    </div>
-                    <div class="footer-section">
-                        <a href="./menu.html">Меню</a>
-                        <a href="./news.html">Новини</a>
-                        <a href="./contacts.html">Контакти</a>
-                        <a href="./account.html">Особистий кабінет</a>
-                        <a href="./shopping_card.html">Кошик</a>
-                        <a href="">Доставка та оплата</a>
-                    </div>
-                    <div class="footer-section">
-                        <a href="">Політика конфіденційності</a>
-                        <a href="">Умови користування</a>
-                        <a href="">Політика використання файлів cookie</a>
-                    </div>
-                </div>
-            </div>
-            
+    <script src="code.js"></script>     
+    <div class="banner">
+        <img src="./image/waves_4.png" width="100%" alt="волны">
+    </div>  
+    <div class="main">   
+        <h2 class="title">Інформація</h2>
+        <div class="introduction">
+            <p>Тут ти можешь переглянути усю необхідну інформацію.</p>
         </div>
+        <div class="info-cards">
+            <div id="delivery-and-payment" class="info-item">
+                <button class="info-toggle">
+                    <span>Доставка та оплата</span>
+                    <img src="./image/Chevron down.png" alt="Chevron">
+                </button>
+                <div class="info-content">
+                    <h2>Доставка</h2>
+                    <p>Ми пропонуємо доставку ваших улюблених десертів у зручний для вас час.</p>
+                    <ul>
+                        <li>
+                            <h3>Самовивіз</h3>
+                            <p>
+                                Ви можете забрати замовлення самостійно з наших кондитерських за адресами: <strong><a
+                                        href="./contacts.html">дивитись</a></strong>.
+                                <br>Графік роботи залежить від обраної кондитерської.
+                            </p>
+                            <p></p>
+                            <p>Після оформлення замовлення ми повідомимо, коли воно буде готове до видачі.</p>
+                        </li>
+                        <li>
+                            <h3>Доставка по місту</h3>
+                            <p>
+                                Доставка здійснюється кур'єром у межах <strong>Дніпра</strong>.
+                            </p>
+                            <p>
+                                Вартість: залежить від відстані, безкоштовно при замовленні від 1000 грн.
+                            </p>
+                            <p>
+                                Час доставки: залежить від наявності обраних позицій в кондитенських (щоб дізнатись наявність,
+                                будь-ласка, зателефонуйте менеджеру).
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Доставка до інших міст (лише для обраних позицій)</h3>
+                            <p>
+                                Ми співпрацюємо з провідними службами доставки
+                                (<strong>Нова Пошта, Укрпошта</strong>).
+                            </p>
+                            <p>
+                                Вартість: відповідно до тарифів перевізника.
+                            </p>
+                            <p>
+                                Час доставки: залежить від наявності обраних позицій в кондитенських (щоб дізнатись наявність,
+                                будь-ласка, зателефонуйте менеджеру), зазвичай 1–3 дні залежно від регіону.
+                            </p>
+                        </li>
+                    </ul>
+                    <br>
+                    <h2>Оплата</h2>
+                    <ul>
+                        <li>
+                            <h3>Онлайн-оплата</h3>
+                            <p>
+                                Ви можете оплатити замовлення за допомогою банківської карти або через зручні онлайн-сервіси
+                                (<strong>LiqPay, WayForPay</strong>).
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Готівкою</h3>
+                            <p>Оплата готівкою можлива при отриманні замовлення у кур'єра або при самовивозі.</p>
+                        </li>
+                        <li>
+                            <h3>Безготівковий розрахунок</h3>
+                            <p>Доступний для корпоративних клієнтів або за попереднім запитом.</p>
+                        </li>
+                    </ul>
         
-    </div>
-    <div class="footer-sections-end">
-        <form action="#" class="newsletter" id="form" netlify>
-            <p>Підпишіться на розсилку</p>
-            <div class="newsletter-form">
-                <input type="email" class="newsletter-input" placeholder="Email">
-                <button class="newsletter-button">Підписатися<img src="./image/icon send.png" alt="" width="28px"></button>
+                    <p>
+                        <em>Ми гарантуємо ретельну упаковку ваших десертів, щоб зберегти їх свіжість та зовнішній вигляд під час
+                            транспортування.</em>
+                    </p>
+                </div>
             </div>
-        </form>
-        <div class="copyright">
-            <p>Made by Karolina RM © 2024</p>
+            <div id="privacy-policy" class="info-item">
+                <button class="info-toggle">
+                    <span>Політика конфіденційності</span>
+                    <img src="./image/Chevron down.png" alt="Chevron">
+                </button>
+                <div class="info-content">
+                    <h2>Політика конфіденційності</h2>
+                    <p>Ми цінуємо вашу довіру і прагнемо забезпечити повний захист ваших персональних даних.</p>
+                    <h3>Яку інформацію ми збираємо?</h3>
+                    <ul>
+                        <li>Ім'я, контактний номер телефону, електронна пошта.</li>
+                        <li>Адреса для доставки.</li>
+                        <li>Інформація про замовлення (обрані товари, дата, сума).</li>
+                    </ul>
+                    <h3>Для чого ми використовуємо вашу інформацію?</h3>
+                    <ul>
+                        <li>Для обробки та доставки замовлень.</li>
+                        <li>Для поліпшення якості обслуговування та зворотного зв’язку.</li>
+                        <li>Для відправки рекламних пропозицій (за згодою клієнта).</li>
+                    </ul>
+                    <h3>Захист інформації</h3>
+                    <p>Ваші дані зберігаються у захищеній базі даних. Ми не передаємо їх третім особам, за винятком випадків,
+                        передбачених законом.</p>
+                    <blockquote>Звертаємо увагу, що ви маєте право в будь-який момент змінити або видалити свої дані,
+                        зв'язавшись із
+                        нами.</blockquote>
+                </div>
+            </div>
+            <div id="terms-of-use" class="info-item">
+                <button class="info-toggle">
+                    <span>Умови користування</span>
+                    <img src="./image/Chevron down.png" alt="Chevron">
+                </button>
+                <div class="info-content">
+                    <h2>Умови користування</h2>
+                    <p>Ласкаво просимо на наш сайт! Користуючись нашим сервісом, ви погоджуєтесь із наступними умовами:</p>
+                    <h3>1. Замовлення</h3>
+                    <ul>
+                        <li>Усі замовлення приймаються онлайн або за контактним телефоном.</li>
+                        <li>Всі товари виготовляються на замовлення, тому їх повернення чи обмін неможливі.</li>
+                    </ul>
+                    <h3>2. Ціни та акції</h3>
+                    <ul>
+                        <li>Усі ціни вказані на момент оформлення замовлення і можуть змінюватися.</li>
+                        <li>Акції та знижки діють у визначені терміни.</li>
+                    </ul>
+                    <h3>3. Зобов’язання користувача</h3>
+                    <ul>
+                        <li>Не використовувати сайт у незаконних цілях.</li>
+                        <li>Не копіювати та не поширювати матеріали сайту без дозволу.</li>
+                    </ul>
+                    <blockquote>Компанія залишає за собою право змінювати умови користування без попередження.</blockquote>
+                </div>
+            </div>
+            <div id="cookie-policy" class="info-item">
+                <button class="info-toggle">
+                    <span>Політика використання файлів cookie</span>
+                    <img src="./image/Chevron down.png" alt="Chevron">
+                </button>
+                <div class="info-content">
+                    <h2>Політика використання файлів cookie</h2>
+                    <p>Наш сайт використовує файли cookie для поліпшення роботи сервісу та вашого досвіду.</p>
+                    <h3>Що таке cookie?</h3>
+                    <p>Файли cookie — це невеликі текстові файли, які зберігаються на вашому пристрої для збору інформації про
+                        вашу
+                        активність на сайті.</p>
+                    <h3>Для чого ми їх використовуємо?</h3>
+                    <ul>
+                        <li>Для запам’ятовування ваших налаштувань та уподобань.</li>
+                        <li>Для аналізу роботи сайту та поліпшення контенту.</li>
+                        <li>Для показу персоналізованої реклами.</li>
+                    </ul>
+                    <h3>Як управляти cookie?</h3>
+                    <p>Ви можете вимкнути або видалити файли cookie у налаштуваннях вашого браузера. Однак деякі функції сайту
+                        можуть стати недоступними.</p>
+                    <blockquote>Використовуючи наш сайт, ви погоджуєтесь із використанням файлів cookie згідно з цією політикою.
+                    </blockquote>
+                </div>
+            </div>
         </div>
     </div>
-    
-</footer>
+</main>
+<div id="footer"></div>
+<script>
+    document.querySelectorAll(".info-toggle").forEach(button => {
+        button.addEventListener("click", function () {
+            const parent = this.parentElement; // Знаходимо батьківський елемент
+            const content = parent.querySelector(".info-content");
+            const img = this.querySelector("img");
 
+            // Переключення відображення контенту
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                img.setAttribute("src", "./image/Chevron down.png");
+            } else {
+                content.style.display = "block";
+                img.setAttribute("src", "./image/Chevron up.png");
+            }
+        });
+    });
+
+    // Перевіряємо, чи є фрагмент (#) у URL
+    document.addEventListener("DOMContentLoaded", () => {
+        const fragment = window.location.hash; // Отримуємо фрагмент (#delivery-and-payment)
+
+        if (fragment) {
+            const targetSection = document.querySelector(fragment); // Знаходимо елемент із ID
+            if (targetSection) {
+                // Відкриваємо секцію, якщо вона існує
+                const button = targetSection.querySelector(".info-toggle"); // Знаходимо кнопку
+                const content = targetSection.querySelector(".info-content");
+                const img = button.querySelector("img");
+
+                content.style.display = "block"; // Відкриваємо контент
+                img.setAttribute("src", "./image/Chevron up.png"); // Міняємо іконку
+
+                // Прокрутка до елемента з ID
+                targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        }
+    });
+</script>
 </body>
 </html>

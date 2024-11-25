@@ -26,3 +26,10 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('footer').innerHTML = html;
+    })
+    .catch(error => console.error('Помилка завантаження фрагмента:', error));

@@ -37,196 +37,167 @@
 
 <main>
     <div id="scrollToTopBtn"></div>
-    <script src="code.js"></script>       
-    <button>
-        <img src="./image/Arrow 1.svg">
-        повернутись
-    </button>
-    <!-- Фото -->
+    <script src="code.js"></script>
+    <div class="banner">
+        <img src="./image/waves_4.png" width="100%" alt="волны">
+    </div>
     <div>
-        <div class="carousel-container">
-            <div class="main-image">
-                <img id="selectedImage" src="./image/image 1.png" alt="Selected Cake">
-            </div>
-            <div class="thumbnail-row-wrapper">
-                <button class="arrow left-arrow" onclick="scrollThumbnails(-100)"><img src="./image/Line 4.png"></button>
-                <div class="thumbnail-row" id="thumbnailRow">
-                    <img class="thumbnail" src="./image/image 1.png" alt="Cake 1" onclick="selectImage('./image/image 1.png')">
-                    <img class="thumbnail" src="./image/image 10.png" alt="Cake 2" onclick="selectImage('./image/image 10.png')">
-                    <img class="thumbnail" src="./image/image 11.png" alt="Cake 3" onclick="selectImage('./image/image 11.png')">
-                    <img class="thumbnail" src="./image/image 12.png" alt="Cake 4" onclick="selectImage('./image/image 12.png')">
-                    <img class="thumbnail" src="./image/image 13.png" alt="Cake 5" onclick="selectImage('./image/image 13.png')">
-                    <img class="thumbnail" src="./image/image 14.png" alt="Cake 6" onclick="selectImage('./image/image 14.png')">
+        <a href="./menu.html#1" class="come-back-arrow">
+            <img src="./image/Arrow 1.svg">
+            <p>повернутись</p>
+        </a>
+        <!-- Фото -->
+        <section class="product">
+            <div class="product-images">
+                <img id="selectedImage" src="./image/image 1 5.png" alt="Selected Cake">
+                
+                <div class="thumbnail-row-wrapper">
+                    <div class="thumbnail-row" id="thumbnailRow">
+                        <img class="thumbnail" src="./image/image 1 5.png" alt="Cake 1"
+                            onclick="selectImage('./image/image 1 5.png')">
+                        <img class="thumbnail" src="./image/image 1 4.png" alt="Cake 2"
+                            onclick="selectImage('./image/image 1 4.png')">
+                        <img class="thumbnail" src="./image/image 1 1.png" alt="Cake 3"
+                            onclick="selectImage('./image/image 1 1.png')">
+                        <img class="thumbnail" src="./image/image 1 2.png" alt="Cake 4"
+                            onclick="selectImage('./image/image 1 2.png')">
+                        <img class="thumbnail" src="./image/image 1 6.png" alt="Cake 5"
+                            onclick="selectImage('./image/image 1 6.png')">
+                    </div>
                 </div>
-                <button class="arrow right-arrow" onclick="scrollThumbnails(100)"><img src="./image/Line 3.png"></button>
             </div>
-        </div>
-        <div> 
-           <h1>Білий квітковий елеганс</h1>
-            <p>Вишуканий двоярусний торт із ніжними білими квітами, золотими деталями та легкими мазками синього кольору. Усередині — ніжний ванільний бісквіт, прошарований ароматним ягідним конфітюром і легким вершковим кремом. Ідеальне поєднання смаку та елегантного дизайну для весілля чи святкової події.</p>
-            <span>2 кг</span>
-            <span>1450 грн</span>
-            <div class="input-group quantity_goods">
-                <input type="button" value="-" id="button_minus">
-                <input type="number" step="1" min="1" max="10" id="num_count" name="quantity" value="1" title="Qty">
-                <input type="button" value="+" id="button_plus">
-            </div> 
-        </div>
-        
-    </div>
-    <!-- Доп инф -->
-    <div>
-        <h1>Додаткова інформація</h1>
-        <p><b>Термін зберігання: </b>2 доби</p>
-        <p><b>Умови зберігання: </b>(6±2) °С при відносній вологості повітря не більше 75%</p>
-        <p><b>Склад: </b>Ванільний бісквіт, ягідний конфітюр (малиновий, полуничний або чорничний), вершковий крем на основі вершків і маскарпоне, харчові барвники, золоті їстівні елементи для декору, квіткові прикраси із мастики або ізомальту</p>    
-        <p><b>Алергени: </b>Яйця, пшениця (глютен), молочні продукти (вершковий сир, вершки, масло), барвники.</p>
-        <p><b>Розмір: </b>20*20*40 см.</p>
-        <p><b>Упаковка: </b>Брендована упаковка, стрічка, крафтовий пакет.</p>
-    </div>
-    <!-- Рекомендовані -->
-    <div>
-        <h1>Рекомендовані</h1>
-        <div class="cards-container">
-            <div class="card">
-                <img src="./image/image 7.png" alt="Продукт 1">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>1 кг</p>
-                <p class="product-price">111 грн</p>
-                <button class="product-button"><img src="./image/shopping_cart.png"></button>
+            <div class="product-descr">
+                <h1 class="section-title">Ягідна ніжність</h1>
+                <p class="product-text">
+                    Цей торт виглядає елегантно та мінімалістично. На верхівці може бути розташований будь-який напис чи нескладний малюнок. Торт круглий, охайно оформлений.
+                    <br><br>Всередині торт складається з:
+                    <br>Ванільного бісквіту — ніжного, легкого та ароматного.
+                    <br>Вершкового крему з маскарпоне — м'якого, повітряного та з насиченим молочним смаком.
+                    <br>Ягідного конфітюру — додає яскраву фруктову нотку, балансуючи солодкість крему.
+                    <br><br>Торт ідеально підходить для святкових подій, особливо днів народження, завдяки гармонійному поєднанню смаків і стильному дизайну.
+                </p>
+                <select class="product-weight-form">
+                    <option value="1">1 кг</option>
+                    <option value="1">1.5 кг</option>
+                    <option value="2">2 кг</option>
+                    <option value="3">3 кг</option>
+                    <option value="4">4 кг</option>
+                    <option value="5">5 кг</option>
+                </select>
+                <div class="product-buttons">
+                    <span class="product-price">1450 грн</span>
+                    <!--
+                    <div class="product-quantity">
+                        <button type="button" id="button_minus">−</button>
+                        <span>1</span>
+                        <button type="button" id="button_plus">+</button>
+                    </div>  
+                    -->
+                    <button class="product-add">У кошик</button>
+                </div>
+                
             </div>
-            <div class="card">
-                <img src="./image/image 6.png" alt="Продукт 2">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>1 кг</p>
-                <p class="product-price">111 грн</p>
-                <button class="product-button"><img src="./image/shopping_cart.png"></button>
+
+        </section>
+        <!-- Доп инф -->
+        <section class="product-additional-info">
+            <h1 class="section-title">Додаткова інформація</h1>
+            <p><b>Термін зберігання: </b>2 доби</p>
+            <p><b>Умови зберігання: </b>(6±2) °С при відносній вологості повітря не більше 75%</p>
+            <p><b>Склад: </b>Ванільний бісквіт, ягідний конфітюр (малиновий, полуничний або чорничний), вершковий крем
+                на основі вершків і маскарпоне, харчові барвники, золоті їстівні елементи для декору, квіткові прикраси
+                із мастики або ізомальту</p>
+            <p><b>Алергени: </b>Яйця, пшениця (глютен), молочні продукти (вершковий сир, вершки, масло), барвники.</p>
+            <p><b>Розмір: </b>20*20*40 см.</p>
+            <p><b>Упаковка: </b>Брендована упаковка, стрічка, крафтовий пакет.</p>
+        </section>
+        <!-- Рекомендовані -->
+        <section class="product-recommended">
+            <h1 class="section-title">Рекомендовані</h1>
+            <div class="cards-container">
+                <a href="#" class="card-container">
+                    <img class="card-img" src="./image/image 7.png" alt="Продукт 1">
+                    <div class="card">
+                        <div class="card-text">
+                            <p class="card-name">Lorem ipsum</p>
+                            <p class="card-descr">Vivamus mi sem, Maecenas vestibulum laoreet sodales.</p>
+                        </div>
+                        <div class="card-details">
+                            <p class="card-weight">1 кг</p>
+                            <p class="card-price">111 грн</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-container">
+                    <img class="card-img" src="./image/image 6.png" alt="Продукт 1">
+                    <div class="card">
+                        <div class="card-text">
+                            <p class="card-name">Lorem ipsum</p>
+                            <p class="card-descr">Vivamus mi sem, imperdiet vitae metus dapibus, rhoncus sollicitudin tortor. Maecenas vestibulum laoreet sodales.</p>
+                        </div>
+                        <div class="card-details">
+                            <p class="card-weight">1 кг</p>
+                            <p class="card-price">111 грн</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-container">
+                    <img class="card-img" src="./image/image 18.png" alt="Продукт 1">
+                    <div class="card">
+                        <div class="card-text">
+                            <p class="card-name">Lorem ipsum</p>
+                            <p class="card-descr">Vivamus mi sem, imperdiet vitae metus dapibus, rhoncus sollicitudin tortor. Maecenas vestibulum laoreet sodales.</p>
+                        </div>
+                        <div class="card-details">
+                            <p class="card-weight">1 кг</p>
+                            <p class="card-price">111 грн</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card-container">
+                    <img class="card-img" src="./image/image 17.png" alt="Продукт 1">
+                    <div class="card">
+                        <div class="card-text">
+                            <p class="card-name">Lorem ipsum</p>
+                            <p class="card-descr">Vivamus mi sem, imperdiet vitae metus dapibus, rhoncus sollicitudin tortor. Maecenas vestibulum laoreet sodales.</p>
+                        </div>
+                        <div class="card-details">
+                            <p class="card-weight">1 кг</p>
+                            <p class="card-price">111 грн</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="card">
-                <img src="./image/image 18.png" alt="Продукт 3">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>1 кг</p>
-                <p class="product-price">111 грн</p>
-                <button class="product-button"><img src="./image/shopping_cart.png"></button>
+        </section>
+        <!-- Відгуки -->
+        <section class="product-reviews">
+            <img src="./image/waves_3.png" width="100%" alt="волны">
+            <h2 class="section-title">Відгуки</h2>
+            <div class="cards-container">
+                <div class="review-card">
+                    <p><strong>Покупець 1</strong></p>
+                    <p class="review-rating">★★★★★</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="review-card">
+                    <p><strong>Покупець 2</strong></p>
+                    <p class="review-rating">★★★★★</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="review-card">
+                    <p><strong>Покупець 3</strong></p>
+                    <p class="review-rating">★★★★★</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
             </div>
-            <div class="card">
-                <img src="./image/image 17.png" alt="Продукт 4">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>1 кг</p>
-                <p class="product-price">111 грн</p>
-                <button class="product-button"><img src="./image/shopping_cart.png"></button>
-            </div>
-        </div>
-    </div>
-    <!-- Відгуки -->
-    <div class="reviews">
-        <img src="./image/waves_3.png" width="100%" alt="волны">
-        <h2 class="section-title">Відгуки</h2>
-        <div class="cards-container">
-            <div class="review-card">
-                <p><strong>Покупець 1</strong></p>
-                <p class="review-rating">★★★★★</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="review-card">
-                <p><strong>Покупець 2</strong></p>
-                <p class="review-rating">★★★★★</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="review-card">
-                <p><strong>Покупець 3</strong></p>
-                <p class="review-rating">★★★★★</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
+        </section>
     </div>
 </main>
-
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-sections">
-            <div class="footer-section">
-                <p>Графік роботи</p>
-                <div class="footer-sched">
-                    <p>Онлайн замовлення: 9:00-18:00</p>
-                    <p>Кондитерські: <a href="./contacts.html" class="tap-here">тисни тут</a></p>
-                </div>
-            </div>
-            <div class="footer-section">
-                <p>Ми у соцмережах: </p>
-                <div class="footer-social-media">
-                    <a href="#"><img src="./image/inst.png" alt=""></a>
-                    <a href="#"><img src="./image/facebook.png" alt=""></a>
-                    <a href="#"><img src="./image/map.png" alt=""></a> 
-                </div>
-            </div>
-            <div class="footer-section">
-                <p>Швидка навігація:</p>
-                <div class="footer-navigation">
-                    <div class="footer-section">
-                        <a href="./index.html#new-products">Новинки</a>
-                        <a href="./index.html#seasonal-products">Сезонні пропозиції</a>
-                        <a href="./index.html#about-us">Про нас</a>
-                        <a href="./index.html#reviews">Відгуки</a>
-                    </div>
-                    <div class="footer-section">
-                        <a href="./menu.html">Меню</a>
-                        <a href="./news.html">Новини</a>
-                        <a href="./contacts.html">Контакти</a>
-                        <a href="./account.html">Особистий кабінет</a>
-                        <a href="./shopping_card.html">Кошик</a>
-                        <a href="">Доставка та оплата</a>
-                    </div>
-                    <div class="footer-section">
-                        <a href="">Політика конфіденційності</a>
-                        <a href="">Умови користування</a>
-                        <a href="">Політика використання файлів cookie</a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        
-    </div>
-    <div class="footer-sections-end">
-        <form action="#" class="newsletter" id="form" netlify>
-            <p>Підпишіться на розсилку</p>
-            <div class="newsletter-form">
-                <input type="email" class="newsletter-input" placeholder="Email">
-                <button class="newsletter-button">Підписатися<img src="./image/icon send.png" alt="" width="28px"></button>
-            </div>
-        </form>
-        <div class="copyright">
-            <p>Made by Karolina RM © 2024</p>
-        </div>
-    </div>
-    
-</footer>
-
+<div id="footer"></div>
 </body>
-
 <script>
-    var numCount = document.getElementById('num_count');
-    var plusBtn = document.getElementById('button_plus');
-    var minusBtn = document.getElementById('button_minus');
-    plusBtn.onclick = function() {
-    var qty = parseInt(numCount.value);
-    qty = qty + 1;
-    numCount.value = qty;
-    }
-    minusBtn.onclick = function() {
-    var qty = parseInt(numCount.value);
-    qty = qty - 1;
-    numCount.value = qty;
-    }
-
     function selectImage(imageSrc) {
         document.getElementById('selectedImage').src = imageSrc;
-    }
-
-    function scrollThumbnails(scrollAmount) {
-        const row = document.getElementById('thumbnailRow');
-        row.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
 
 </script>
