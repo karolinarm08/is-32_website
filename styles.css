@@ -178,6 +178,10 @@ section {
     gap: 14px;
 }
 
+i.fa.fa-shopping-cart, i.fa.fa-user {
+    font-size: 35px;
+}
+
 .main-container,
 .section-cont {
     display: flex;
@@ -236,6 +240,7 @@ section {
 .card-img {
     border-radius: 20px 20px 0 0;
     width: 100%;
+    height: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
@@ -328,10 +333,10 @@ section {
     display: flex;
     flex-direction: row;
     align-items: start;
-    justify-content: center;
     flex-wrap: nowrap;
+    overflow-x: auto;
     gap: 28px;
-    margin-top: 42px;
+    padding: 21px;
     text-align: center;
 }
 
@@ -344,6 +349,8 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 450px;
+    min-width: 250px;
 }
 
 .shop-card img {
@@ -559,7 +566,12 @@ section {
 
 .filter {
     height: 35px;
-    padding: 0;
+    width: auto;
+}
+
+.fa.fa-filter {
+    color: var(--color-purple);
+    font-size: 24px;
 }
 
 .filter-button,
@@ -651,8 +663,8 @@ section {
     margin: 0px;
 
     .card-container {
-        min-width: 334px;
-        max-width: 334px;
+        min-width: 300px;
+        max-width: 300px;
         width: 100%;
     }
 }
@@ -932,6 +944,7 @@ section {
 
 .content {
     width: 100%;
+    overflow: hidden;
 }
 
 .hidden {
@@ -948,7 +961,7 @@ label {
 }
 
 .account-input {
-    width: -webkit-fill-available;
+    width: 100%;
     padding: 14px;
     margin: 7px 0;
     background-color: var(--color-background);
@@ -973,10 +986,11 @@ label {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
+    justify-content: start;
     overflow: hidden;
     gap: 14px;
-    width: fit-content;
+    width: 100%;
+    max-width: 1000px;
 }
 
 .delivery-addresses {
@@ -984,7 +998,6 @@ label {
     grid-template-areas:
     "c c c s s s"
     "h h a a f f";
-    justify-content: center;
     overflow: hidden;
     gap: 14px;
     width: fit-content;
@@ -1014,11 +1027,12 @@ label {
 .introduction {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .saved-addrs {
     margin-left: 21px;
-    width: max-content;
+    width: fit-content;
 
     ::marker {
         color: var(--color-blue);
@@ -1092,7 +1106,6 @@ label {
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;    
-    overflow-y: clip;
     gap: 28px;
     padding: 21px;
     width: 100%;
@@ -1101,6 +1114,10 @@ label {
 .archive-card {
     min-width: 200px;
     max-width: 200px;
+
+    .card {
+        height: auto;
+    }
 }
 
 .info-content {
@@ -1324,6 +1341,10 @@ i.fa.fa-bars {
         margin: 21px;
     }
 
+    .footer {
+        padding: 21px;
+    }
+
     .title {
         margin-bottom: 14px;
     }
@@ -1339,10 +1360,6 @@ i.fa.fa-bars {
     .shop-name {
         font-size: 16px;
         padding: 14px;
-    }
-
-    .shop-cards {
-        flex-wrap: wrap;
     }
 
     .newsletter {
@@ -1456,6 +1473,36 @@ i.fa.fa-bars {
         font-size: 35px; 
         text-align: end;   
     }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        align-items: center;
+    }
+
+    .personal-inf {
+        gap: 7px;
+    }
+
+    .account-input {
+        padding: 7px 14px;
+        margin: 4px 0;
+        font-size: 14px;
+    }
+
+    .delivery-addresses {
+        gap: 7px;
+        width: 100%;
+    }
+
+    .saved-addr {
+        >div {
+            justify-content: unset;
+        }
+    }
+
 }
 
 
@@ -1530,71 +1577,6 @@ i.fa.fa-bars {
         font-size: 14px;
     }
 
-    /*пока не меняла
-    
-    header {
-        position: relative;
-    }
-    
-    main {
-    padding-top: 14px;
-    }
-
-    section, .main {
-        margin-bottom: 35px;
-        margin-left: 14px;
-        margin-right: 14px;
-        margin-top: 14px;
-    }
-
-    section {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    nav a:focus {
-        color: var(--color-purple);
-        font-weight: 600;
-    }
-    
-    nav .active, nav a:hover {
-        font-weight: 600;
-    }
-    
-    .nav-logo {
-        font-family: "Schoolbell", cursive;
-        font-weight: 400;
-        font-style: normal;
-        font-size: xxx-large; 
-        color: var(--color-purple);
-        margin-right: 35px;
-    }
-    
-    .nav-main, .nav-first, .nav-second {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        overflow: visible;
-    }
-    
-    .nav-main, .nav-first {
-        gap: 21px;
-    }
-    
-    .nav-second {
-        gap: 14px;
-    }
-    
-    .main-container, .section-cont {
-        display: flex;
-        flex-direction: row;
-        align-items: end;
-        justify-content: space-between;
-        margin: 0px;
-    }
-    */
-
     .about-section {
         gap: 21px;
         flex-direction: column-reverse;
@@ -1609,19 +1591,6 @@ i.fa.fa-bars {
 
     .about-inf {
         width: 100%;
-    }
-
-    .shop-cards {
-        margin-top: 21px;
-    }
-
-    .shop-card {
-        max-width: none;
-        width: 100%;
-    }
-
-    .footer {
-        padding: 21px;
     }
 
     .newsletter-form {
@@ -1881,7 +1850,7 @@ i.fa.fa-bars {
 /*планшет*/
 @media (min-width: 768px) and (max-width: 1023px) {
     .review-card {
-        flex-basis: calc((100% - 14px * 2) / 3);
+        flex-basis: calc((100% - 14px * 1) / 2);
     }
 
     .shop-name {
@@ -1942,6 +1911,76 @@ i.fa.fa-bars {
     .select-all {
         font-size: 12px;
     }
+
+    .personal-inf {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        gap: 7px;
+        width: 100%;
+
+        .confirm-button {
+            width: 100%;
+        }
+    }
+
+    .account-input {
+        padding: 7px 14px;
+        margin: 4px 0;
+        font-size: 14px;
+        width: 100%; /**может где-то работать не правильно**/
+    }
+
+    .delivery-addresses {
+        grid-template-areas:
+            "c c c s s s"
+            "h h a a f f"
+            "b b b b b b";
+        gap: 7px;
+        width: 100%;
+
+        .confirm-button {
+            grid-area: b;
+            width: 100%;
+        }
+    }
+
+    .saved-addr {
+        >div {
+            justify-content: unset;
+        }
+    }
+
+    .archive-card {
+        flex-direction: row;
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+        box-shadow: 0px 0px 14px 6px rgba(116, 116, 116, 0.1);
+    
+        .shop-cart-img,
+        .card {
+            width: 50%;
+        }
+        .card-img {
+            border-radius: 20px 0 0 20px;
+        }
+
+    }
+
+    .archive-cards {
+        flex-direction: column;
+        width: -webkit-fill-available;
+        padding: 14px;
+        margin: 0 -14px;
+        gap: 14px
+    }
+
+    .change-password {
+        width: 100%;
+    }
+
 }
 
 /**/
