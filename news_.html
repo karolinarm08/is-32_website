@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
+    <title>*</title>        
+</head>
+<body>
+<header>
+    <nav id="nav" class="topnav">
+        <div class="nav-logo"><a href="./index.html">RUBY</a></div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="nav-main">
+            <div class="nav-first">
+                <a href="./menu.html">Меню</a>
+                <a href="./index.html#about-us">Про нас</a>
+                <a href="./news.html" class="active">Новини</a>
+                <a href="./info.html">Інформація</a>
+                <a href="./contacts.html">Контакти</a>
+            </div>
+            <div class="nav-second">
+                <a href="./account.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                <a href="./shopping_card.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div id="scrollToTopBtn"></div>
+    <script src="code.js"></script>
+    <div class="banner">
+        <img src="./image/waves_4.png" width="100%" alt="волны">
+    </div>
+    <div>
+        <a href="./news.html#1" class="come-back-arrow">
+            <img src="./image/Arrow 1.svg">
+            <p>повернутись</p>
+        </a>
+        <!-- Фото -->
+        <section class="news">
+            <div class="news-images">
+                <img id="selectedImage" src="./image/image 30.png" alt="Selected Cake">
+                <div class="thumbnail-row-wrapper">
+                    <div class="thumbnail-row" id="thumbnailRow">
+                        <img class="thumbnail" src="./image/image 30.png" alt="Cake 1"
+                            onclick="selectImage('./image/image 30.png')">
+                        <img class="thumbnail" src="./image/image 30 1.png" alt="Cake 2"
+                            onclick="selectImage('./image/image 30 1.png')">
+                        <img class="thumbnail" src="./image/image 30 2.png" alt="Cake 3"
+                            onclick="selectImage('./image/image 30 2.png')">
+                        <img class="thumbnail" src="./image/image 30 3.png" alt="Cake 4"
+                            onclick="selectImage('./image/image 30 3.png')">
+                        <img class="thumbnail" src="./image/image 30 4.png" alt="Cake 5"
+                            onclick="selectImage('./image/image 30 4.png')">
+                        <img class="thumbnail" src="./image/image 30 5.png" alt="Cake 5"
+                            onclick="selectImage('./image/image 30 5.png')">
+                    </div>
+                </div>
+            </div>
+            <div class="news-descr">
+                <h1 class="section-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                <p class="news-text">
+                    Sed faucibus, tellus eleifend egestas ultricies, tortor nunc ornare justo, eu bibendum libero mi quis purus. In hac habitasse platea dictumst. Suspendisse potenti. Vestibulum sapien nisl, pretium vel enim at, gravida iaculis orci. Phasellus pharetra at magna vitae porttitor. Duis vestibulum tristique felis a interdum. Curabitur lobortis elit metus, at tincidunt mauris ultricies sit amet. Aliquam imperdiet justo dui, iaculis convallis mauris porta ac. Quisque quis nisl eget nulla scelerisque egestas vitae sit amet leo. Donec mollis urna enim, sed pulvinar ipsum vestibulum eu. Vestibulum dictum maximus purus, id accumsan justo posuere tristique. Etiam sodales mollis purus eget vulputate. Fusce id congue mauris, ut accumsan purus. Duis nec fermentum ipsum, et consequat ante.
+                </p>           
+            </div>
+        </section>
+    </div>
+</main>
+<div id="footer"></div>
+</body>
+<script>
+     function selectImage(imageSrc) {
+        document.getElementById('selectedImage').src = imageSrc;
+    }
+</script>
+</html>

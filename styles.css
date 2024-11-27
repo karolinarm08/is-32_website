@@ -48,6 +48,7 @@ header {
     margin-top: 0%;
     align-content: center;
     color: var(--color-purple);
+    box-shadow: 0 0 21px 0 rgba(116, 116, 116, 0.2);
     z-index: 999;
 }
 
@@ -135,14 +136,20 @@ span {
     font-size: 14px;
 }
 
-section,
-.main {
+section, .main {
     margin: 35px;
+}
+
+.main {
+    margin-top: 21px;
 }
 
 section {
     display: flex;
     flex-direction: column;
+}
+.banner {
+    margin: 14px 0;
 }
 
 *[id] {
@@ -296,7 +303,7 @@ i.fa.fa-shopping-cart, i.fa.fa-user {
 }
 
 .card-price, .product-price {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 700;
     color: var(--color-blue);
 }
@@ -647,8 +654,8 @@ i.fa.fa-shopping-cart, i.fa.fa-user {
     grid-auto-flow: row;
     justify-content: center;
     overflow: hidden;
-    margin: 0px -28px;
-    padding: 28px;
+    margin: 0px -21px;
+    padding: 21px;
     gap: 20px;
 }
 
@@ -697,7 +704,7 @@ i.fa.fa-shopping-cart, i.fa.fa-user {
     color: var(--color-black);
 }
 
-.news-text {
+.news-main {
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -731,7 +738,8 @@ i.fa.fa-shopping-cart, i.fa.fa-user {
 }
 
 .cont-card,
-.news-card {
+.news-card,
+.news-card:focus-visible {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -742,14 +750,15 @@ i.fa.fa-shopping-cart, i.fa.fa-user {
     box-shadow: 0px 0px 21px 6px rgba(116, 116, 116, 0.1);
     color: var(--color-black);
     transition: box-shadow 0.4s ease-in-out;
-
-    img {
+    outline: none;
+}
+.cont-card img,
+.news-card img {
         border-radius: var(--card-border);
         width: 40%;
         height: 100%;
         aspect-ratio: 4 / 3;
         object-fit: cover;
-    }
 }
 
 .cont-card:hover {
@@ -1174,13 +1183,13 @@ label {
     }
 }
 
-.product {
+.product, .news {
     display: flex;
     flex-direction: row;
     gap: 35px;
 }
 
-.product-images {
+.product-images, .news-images {
     width: 40%;
 }
 
@@ -1193,6 +1202,10 @@ label {
     aspect-ratio: 1/1;
     object-fit: cover;    
     border-radius: var(--card-border);
+}
+
+.news-images #selectedImage {
+    aspect-ratio: 4/3;
 }
 
 .thumbnail-row {
@@ -1227,11 +1240,22 @@ label {
     margin-bottom: 21px;
 }
 
-.product-title {
+.news-descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow: hidden;
+    gap: 21px;
+    width: 60%;
+    height: min-content;
+    margin-bottom: 21px;
+}
+
+.product-title, .news-title {
     grid-area: t;
 }
 
-.product-text {
+.product-text, .news-text {
     grid-area: txt;
 }
 
@@ -1416,7 +1440,7 @@ i.fa.fa-bars {
         padding: 14px;
     }
 
-    .news-text {
+    .news-main {
         gap: 7px;
     }
 
@@ -1451,12 +1475,12 @@ i.fa.fa-bars {
         }
     }
 
-    .product {
+    .product, .news {
         flex-direction: column;
         gap: 35px;
     }
 
-    .product-images, .product-descr {
+    .product-images, .product-descr, .news-descr, .news-images {
         width: 100%;
     }
 
@@ -1467,6 +1491,10 @@ i.fa.fa-bars {
         "txt txt"
         "w p"
         "a a";
+    }
+
+    .news-descr {
+        gap: 14px;
     }
     
     .product-price {
@@ -1637,146 +1665,6 @@ i.fa.fa-bars {
     .review-container {
         flex-wrap: wrap;
     }
-
-    /*новини
-    .news-cards {
-        display: flex;
-        flex-direction: column;
-        margin-top: 28px;
-        margin-bottom: 28px;
-        gap: 28px;
-    }
-    
-    .news-card {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 28px;
-        border-radius: 20px;
-        box-shadow: 0px 0px 21px 6px rgba(116,116,116,0.1);
-        color: var(--color-black);
-        transition: box-shadow 0.4s ease-in-out;
-    } 
-    
-    .news-card img {
-        border-radius: 20px;
-        margin-left: 28px;
-        width: 40%;
-        height: 100%;
-    }   
-    
-    .news-card:hover {
-        box-shadow: 0px 0px 21px 6px rgba(73, 129, 147, 0.3);
-        color: var(--color-black);
-    }
-    
-    .news-text {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-    }
-    
-    .news-text h2 {
-        font-weight: 600;    
-        font-size: 32px;    
-        color: var(--color-black);
-    }
-    
-    .news-text p {
-        font-weight: 400;    
-        font-size: 18px;    
-        color: var(--color-grey-dark);
-    }
-    
-    .news-text span {
-        font-weight: 500;    
-        font-size: 18px;    
-        color: var(--color-purple);
-    }
-    /*новини*/
-
-    /*контакти
-    .cont-cards {
-        display: flex;
-        flex-direction: column;    
-        width: 100%;
-        margin-top: 28px;
-        margin-bottom: 28px;
-        gap: 28px;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-    
-    .cont-card {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 60%;
-        padding: 28px;
-        border-radius: 20px;
-        box-shadow: 0px 0px 21px 6px rgba(116,116,116,0.1);
-        color: var(--color-black);
-        transition: box-shadow 0.4s ease-in-out;
-    } 
-    
-    .cont-card img {
-        border-radius: 20px;
-        margin-left: 28px;
-        max-width: 40%;
-        height: 100%;
-    }   
-    
-    .cont-card:hover {
-        box-shadow: 0px 0px 21px 6px rgba(73, 129, 147, 0.3);
-        color: var(--color-black);
-        cursor: context-menu;
-    }
-    
-    .cont-text {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-        justify-content: space-between;
-    }
-    
-    .cont-text>div {
-        display: flex;
-        flex-direction: column;
-        gap: 17px;
-    }
-    
-    .cont-add {
-        font-weight: 600;    
-        font-size: 24px;    
-        color: var(--color-black);
-    }
-    
-    .cont-sched {
-        font-weight: 400;    
-        font-size: 20px; 
-        color: var(--color-grey-dark);
-    }
-    
-    .cont-phones {
-        font-weight: 400;    
-        font-size: 20px; 
-        color: var(--color-black);
-    }
-    
-    .cont-close {
-        color: var(--color-purple);
-        font-weight: 600;   
-        font-size: 20px;  
-    }
-    
-    .cont-open {
-        color: var(--color-blue);
-        font-weight: 600;   
-        font-size: 20px;  
-    }
-    /*контакти*/
-
-    /*кошик
     .shop-cart-but {
         display: flex;
         flex-direction: row;
@@ -1870,12 +1758,10 @@ i.fa.fa-bars {
         flex-direction: column;
     }
 
-    .product-text {
+    .product-text, .news-text {
         margin-bottom: 21px;
         font-size: 14px;
     }
-    
-    
     
     .product-add {
         padding: 10px;
@@ -1895,8 +1781,8 @@ i.fa.fa-bars {
     .news-card img,
     .cont-card img {
         width: 100%;
-        height: 50%;
-        object-fit: fill;
+        height: auto;
+        object-fit: cover;
     }
 
     .shop-cart-but {
