@@ -385,9 +385,9 @@ i.fa.fa-shopping-cart, i.fa.fa-user {
     align-items: start;
     justify-content: center;
     overflow: hidden;
-    margin: 0px -28px;
+    margin: 0px -21px;
     gap: 14px;
-    padding: 28px;
+    padding: 21px;
 }
 
 .review-card {
